@@ -1,0 +1,16 @@
+<div class='row'>
+	<h2>NYC WiFi HOTSPOTS</h2>
+	<h3><%= @hotspots.count %> available hotspots</h3>
+	<% @hotspots.each do |hotspot| %>
+		<div class='small-6 large-4 columns'>
+			<div class='hotspot-teaser'>
+				<strong><%= hotspot.id %> <%= hotspot.name %></strong> <small><%= link_to 'delete hotspot', hotspot, method: :delete %></small><br />
+				<%= hotspot.street %>, <%= hotspot.city %> <%= hotspot.zip %><br />
+				<br />
+				<strong><%= hotspot.fee %> wifi</strong><br />
+				<%= hotspot.phone %><br />
+				<%= link_to 'website', hotspot.url  unless hotspot.url == " " %>
+			</div>
+		</div>
+	<% end %>
+</div>
