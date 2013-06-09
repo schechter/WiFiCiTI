@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130605000149) do
+ActiveRecord::Schema.define(:version => 20130609173025) do
 
   create_table "hotspots", :force => true do |t|
     t.decimal  "latitude"
@@ -25,6 +25,19 @@ ActiveRecord::Schema.define(:version => 20130605000149) do
     t.string   "url"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "ratings", :force => true do |t|
+    t.integer  "hotspot_id"
+    t.integer  "user_id"
+    t.integer  "speed"
+    t.integer  "reliability"
+    t.integer  "accessibility"
+    t.integer  "power"
+    t.integer  "noise_level"
+    t.text     "comments"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end

@@ -1,0 +1,21 @@
+<div class='row'>
+	<div class='small-12 columns'>
+		<h1>Show Page for <%= @hotspot.name %></h1>
+
+		<h3>Info:</h3>
+		Add hotspot info &amp; map here</p>
+		<h3>Ratings</h3>
+		<% if @ratings.nil? %>
+		<p>There are no ratings but your code is working</p>
+		<% else %>
+		<% @ratings.each do |r| %>
+		Speed: <%= r.speed %><br />
+		Reliability: <%= r.reliability %><br />
+		Accessability: <%= r.accessibility %><br />
+		Power Avail: <%= r.power %><br />
+		Noise Level: <%= r.noise_level %><br />
+		<b>Overall Rating: <%= ((r.speed + r.reliability + r.accessibility + r.power + r.noise_level) / 5).to_f %></b>
+		<% end %>
+		<% end %>
+	</div>
+</div>
