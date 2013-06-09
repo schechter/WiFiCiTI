@@ -1,5 +1,6 @@
 HotspotApp::Application.routes.draw do
 
+  resources :ratings
   resources :hotspots do
     collection do
       get 'seed'
