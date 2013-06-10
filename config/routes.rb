@@ -1,5 +1,6 @@
 HotspotApp::Application.routes.draw do
 
+	resources :users
   resources :ratings
   resources :hotspots do
     collection do
@@ -8,4 +9,5 @@ HotspotApp::Application.routes.draw do
   end
 
   root to: 'hotspots#index'
+
 end

@@ -60,6 +60,8 @@ GEM
     font-awesome-sass-rails (3.0.2.2)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
+    geocoder (1.1.8)
+    gmaps4rails (1.5.6)
     hike (1.2.3)
     httparty (0.11.0)
       multi_json (~> 1.0)
@@ -157,6 +159,8 @@ DEPENDENCIES
   binding_of_caller
   coffee-rails (~> 3.2.1)
   font-awesome-sass-rails
+  geocoder
+  gmaps4rails
   httparty
   jquery-rails
   json
