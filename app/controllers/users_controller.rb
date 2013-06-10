@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
 
   def index
-    @users = Users.all
+    @users = User.all
   end
 
   def create
     user = User.new(params[:user])
-    
+
     if user.save!
       redirect_to #where to go after user creates an account
     else 
