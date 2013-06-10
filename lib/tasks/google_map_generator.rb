@@ -10,7 +10,7 @@ module GoogleMapGen
       location =[]
       location << hs.latitude
       location << hs.longitude
-      addresses << loction
+      addresses << location
     end
     addresses  #returns any [array of [arrays containing lat and long BigDecimal numbers]]
   end

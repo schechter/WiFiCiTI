@@ -2,4 +2,5 @@
 tmp/cache/assets/*
 tmp/data/meta_request/*
 tmp/cache/sass*
-tmp/pids/
+tmp/pids/*
+log/developemnt.log
