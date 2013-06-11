@@ -1,5 +1,9 @@
 class RatingsController < ApplicationController
 
+	def index
+		@ratings = Rating.all
+	end
+
 	def new
 		@hotspot = Hotspot.find(params[:id])
 		@rating = Rating.new
@@ -12,6 +16,10 @@ class RatingsController < ApplicationController
 		else
 			render 'new'
 		end
+	end
+
+	def show
+		@rating = Rating.find(params[:id]) #should be ratings for one hotspot, not rating id.
 	end
 
 end
