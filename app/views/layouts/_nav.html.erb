@@ -14,7 +14,14 @@
       <li class="divider"></li>
       <li><a href="#">Locate Me</a></li>
       <li class="divider"></li>
-      <li><a href="#">Directory</a></li>
+      <li><%= link_to 'Hotspot Directory', hotspots_path %></li>
+      <li class="divider"></li>
+      <li class='has-dropdown'><a>Users</a>
+        <ul class='dropdown'>
+          <li><%= link_to 'view users', users_path %></li>
+          <li><%= link_to 'new user', new_user_path %></li>
+        </ul>
+      </li>
       <li class="divider"></li>
     </ul>
 
