@@ -107,7 +107,7 @@ class HotspotsController < ApplicationController
   end
 
 def hs_near_user
-    hotspots = Hotspot.near(User.all[2..4].first.location,0.185)  #just using dumby user for now.  need to pass in the user here
+    hotspots = Hotspot.near(User.all[0...6].first.location,0.185)  #just using dumby user for now.  need to pass in the user here
     @map_url = hot_spots_map(address_to_marker_generator(get_addresses_from_hs_array(hotspots)))
   end
 
