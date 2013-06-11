@@ -1,6 +1,11 @@
 HotspotApp::Application.routes.draw do
 
-	resources :users
+	resources :users do
+    collection do
+      get 'find_me'
+    end
+  end
+
   resources :ratings
   resources :hotspots do
     collection do

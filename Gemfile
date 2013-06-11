@@ -11,14 +11,14 @@ gem 'gmaps4rails'
 
 
 group :development do
-gem 'better_errors'
-gem 'quiet_assets'
-gem 'binding_of_caller'
-gem 'meta_request'
-gem 'annotate'
-gem 'pry-rails'
-gem 'pry-debugger'
-gem 'pry-stack_explorer'
+  gem 'better_errors'
+  gem 'quiet_assets'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  gem 'annotate'
+  gem 'pry-rails'
+  gem 'pry-debugger'
+  gem 'pry-stack_explorer'
 end
 
 

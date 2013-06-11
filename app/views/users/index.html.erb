@@ -1,9 +1,9 @@
 <h1>Users#index</h1>
 <% @users.each do |user| %>
 	<p>User name: <%= user.name %></p>
-	<span>User email: <%= user.email %></span>
-	<span>User latitude: <%= user.latitude %></span>
-	<span>User longitude: <%= user.longitude %></span>
+	User email: <%= user.email %><br />
+	User latitude: <%= user.latitude %><br />
+	User longitude: <%= user.longitude %><br />
 	<p>User location: <%= user.location %></p>
 
 	<% end %>

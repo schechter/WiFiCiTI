@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
 
+  def find_me
+    @user = User.new(name: 'guest', location: request.remote_ip)
+  end
+  
   def index
     @users = User.all
   end
@@ -8,10 +12,10 @@ class UsersController < ApplicationController
     user = User.new(params[:user])
 
     if user.save!
-      redirect_to #where to go after user creates an account
-    else 
+      redirect_to user
+    else
       # flash error message to user that create didn't work
-      redirect_to new_user_path
+      render 'new'
     end
   end
 
@@ -19,7 +23,7 @@ class UsersController < ApplicationController
     @user = User.new()
   end
 
-    def edit
+  def edit
     @user = User.find(params[:id])
   end
 
@@ -29,10 +33,12 @@ class UsersController < ApplicationController
 
   def update
     user = User.find(params[:id])
-    if user.update_atrributes(params[:user])
-      redirect_to #where to go after we edit a user
+    if user.update_attributes(params[:user])
+      redirect_to user
+    else
+      render 'edit'
+    end
   end
-end
 
   def destroy
     User.find(params[:id]).delete
