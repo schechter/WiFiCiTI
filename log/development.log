@@ -1,0 +1,1411 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 14:18:01 -0400
+Processing by HotspotsController#index as HTML
+  [1m[36m (4.6ms)[0m  [1mSELECT COUNT(*) FROM "hotspots" [0m
+  [1m[35mHotspot Load (25.2ms)[0m  SELECT "hotspots".* FROM "hotspots" ORDER BY name ASC
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 324[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1166
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1040[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1041
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 609[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1167
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 2[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 610
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1042[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 426
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1043[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1044
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 694[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 845
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1114[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 327
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 325[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1045
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 311[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 846
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1115[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1046
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 500[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 682
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 894[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 636
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 657[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 658
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 634[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 384
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 633[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 326
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 888[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1243
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 611[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1244
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 508[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 473
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1047[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 431
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 847[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1168
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1048[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1169
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1170[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1049
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 639[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1050
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 672[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 501
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 668[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1051
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 741[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 365
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 364[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 363
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 362[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 361
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 360[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 359
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 358[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 357
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 908[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 907
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 422[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 423
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 424[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 742
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 743[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 744
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 745[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 746
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 3[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 740
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1052[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1252
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 654[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1053
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1054[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 699
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1112[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 328
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 733[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 637
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1059[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1056
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1057[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1058
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 638[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 329
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 312[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 664
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 660[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 474
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 466[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 647
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 383[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 478
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 465[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 193
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 194[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 195
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 196[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 197
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 198[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 199
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 200[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 201
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 202[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 203
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 204[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 205
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 206[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 207
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 208[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 209
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 210[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 211
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 212[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 213
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 214[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 215
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 216[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 217
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 218[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 219
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 220[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 221
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 222[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 223
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 437[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 438
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 439[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 440
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 441[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 442
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 443[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 444
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 445[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 446
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 447[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 448
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 449[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 450
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 451[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 452
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 453[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 454
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 455[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 456
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 457[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 458
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 459[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 460
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 461[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 462
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 463[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 464
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 313[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1060
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 707[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 755
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 704[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 385
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 711[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 848
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1061[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1062
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 895[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 885
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 506[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1064
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1063[0m
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1065
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 467[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1068
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 676[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1192
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 896[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 675
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 650[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 677
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 683[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 330
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 648[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1055
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 314[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 849
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 752[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 753
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 395[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 331
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 332[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 315
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 427[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 396
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1069[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 850
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 851[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 712
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 678[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 673
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 703[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1236
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1193[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 505
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 386[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 387
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 428[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1238
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1239[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1240
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1242[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 661
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 388[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1241
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 333[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 905
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 372[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 378
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 432[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 376
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 375[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 374
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 373[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 371
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 370[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 369
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 368[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 367
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 366[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 397
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 377[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 674
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 802[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1067
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 897[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 389
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 886[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1070
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1071[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1072
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 898[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 665
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 643[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 642
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 641[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 336
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 316[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 889
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 337[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 659
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1073[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1074
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 398[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 612
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 613[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 614
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 399[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 400
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1162[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 401
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 402[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 615
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 616[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 617
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 403[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1209
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 338[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 890
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 390[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1103
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1102[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1101
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1100[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1080
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1105[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 852
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1104[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1075
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 224[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1079
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1078[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1077
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1076[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1081
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1099[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 225
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1082[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 226
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1083[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 227
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 228[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1084
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 229[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1085
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1086[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1098
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1087[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 230
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 231[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1088
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 232[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 233
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 234[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1089
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1090[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1091
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1092[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1093
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1094[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1095
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1096[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1116
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 235[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 236
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1107[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1097
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1106[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 735
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 237[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 684
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 238[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 239
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 891[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 685
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 670[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 655
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 688[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 4
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 140[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 391
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 754[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 708
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 479[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 663
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1210[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 687
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 241[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 739
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 686[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 736
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 689[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 317
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 339[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 751
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 749[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 747
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 748[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 750
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 899[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 242
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 243[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 475
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 340[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 480
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 900[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 244
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 853[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 690
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 245[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 854
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 246[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1212
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1213[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1211
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1214[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1138
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1139[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1171
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1158[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1159
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1160[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1172
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 5[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1173
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1152[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1153
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1155[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1154
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 758[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1215
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 421[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1174
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1150[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1149
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1156[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 247
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 341[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 855
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 709[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1250
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 731[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 730
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 248[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 669
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 691[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 128
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 472[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 249
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 734[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 250
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1141[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1148
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1147[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1146
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1145[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1144
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1143[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1142
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1140[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 6
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1151[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 974
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 7[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1157
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 342[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 141
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 251[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 692
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 252[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 253
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 254[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 902
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 901[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 844
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 430[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 433
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 434[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 435
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 679[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 903
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 255[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 318
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 256[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 192
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 488[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 693
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1253[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1254
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1255[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 382
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 258[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 257
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 484[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 860
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 9[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 10
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 11[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 29
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1179[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1178
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1177[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1176
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1175[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 30
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 31[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 32
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 33[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 34
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 35[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 36
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 42[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 43
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 44[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 45
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 46[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 47
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 48[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 49
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 50[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 51
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 52[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 53
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 54[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 55
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1137[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1128
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1127[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1126
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1125[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1124
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1123[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1122
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1121[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1120
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1119[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1118
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1117[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 107
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 108[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 109
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 110[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 111
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 112[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 113
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 114[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 115
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 116[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 117
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 118[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 119
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 120[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 121
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1032[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1031
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1030[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1029
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1019[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1018
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1017[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1016
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1000[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 999
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 998[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 997
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 996[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 995
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 994[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 993
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 992[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 991
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 990[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 989
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 988[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 987
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 986[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 985
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 984[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 983
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 982[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 981
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 980[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 979
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 978[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 977
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 976[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 975
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 142[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 143
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 144[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 145
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 146[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 147
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 148[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 149
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 150[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 151
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 152[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 153
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 154[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 155
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 156[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 859
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 858[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 857
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 856[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 157
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 158[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 159
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 160[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 161
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 162[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 163
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 164[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 165
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 166[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 167
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 168[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 832
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 169[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 756
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 12[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 13
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 14[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 15
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 16[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 17
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 18[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 19
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 20[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 21
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 22[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 23
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 24[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 25
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 26[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 27
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 28[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 266
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 414[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 413
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 412[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 411
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 410[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 409
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 408[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 407
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 259[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 278
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1200[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1199
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1197[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1196
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1195[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1194
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 418[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 265
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 516[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 517
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 518[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 519
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 520[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 521
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 522[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 523
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 524[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 525
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 526[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 527
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 528[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 529
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 530[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 531
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 532[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 533
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 534[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 535
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 536[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 537
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 538[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 539
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 540[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 541
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 542[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 543
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 544[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 545
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 546[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 547
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1198[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 264
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 263[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 262
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 261[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 260
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 280[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 279
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 277[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 276
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 275[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 416
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 274[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 273
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 272[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 271
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 270[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 269
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 268[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 267
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 415[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 417
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1202[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1201
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 429[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 667
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 759[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 549
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 548[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 468
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 502[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 404
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 550[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 507
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 906[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 862
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 861[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 289
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 290[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1221
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 288[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1222
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 291[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 909
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1234[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 170
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 910[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1224
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 911[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 171
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 292[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 172
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 173[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 923
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 293[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 514
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 174[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 175
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1223[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 294
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 176[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 295
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 912[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 510
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 296[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 297
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 298[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 913
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 299[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 177
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 300[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 301
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 178[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 179
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1226[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 302
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 914[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 303
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1227[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 915
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 916[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 917
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 918[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1228
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1229[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 304
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 511[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 305
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 919[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 180
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 512[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 181
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1230[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 306
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 307[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 920
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 308[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 183
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1225[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 184
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 309[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 921
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 185[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 186
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 187[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 310
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 188[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 513
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 189[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 190
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 922[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1232
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 182[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 515
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1231[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 924
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1233[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1235
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 469[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 893
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 651[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1245
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 551[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 552
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 553[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 122
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 555[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 554
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 556[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 343
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 557[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 838
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 713[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 652
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 481[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 123
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 124[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 649
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 632[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1249
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1248[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1247
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1246[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 344
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 558[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 125
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 666[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 656
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 646[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 559
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 560[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 696
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 644[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 470
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1001[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 695
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 476[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 705
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 138[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 561
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 483[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 563
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1002[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 573
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 572[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1165
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1164[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1163
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 571[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 570
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 569[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 568
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 562[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 567
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 566[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 863
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 565[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 564
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 139[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 503
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 925[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 490
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 926[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 927
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 928[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 929
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 930[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 931
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 932[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 491
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 933[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 492
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 493[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 494
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 934[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 495
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 935[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 936
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 937[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 938
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 939[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 940
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 941[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 942
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 943[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 944
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 496[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 945
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 497[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 946
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 947[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 948
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1220[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 949
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 950[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 951
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 952[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 953
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 954[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1003
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1004[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1005
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1006[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1007
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1008[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1009
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1010[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1011
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1012[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1013
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1014[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1015
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 281[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 282
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 283[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 498
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 284[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 285
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 419[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 420
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 499[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 697
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 381[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 574
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 864[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 738
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 904[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 575
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1219[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 576
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 680[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 702
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 577[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 892
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 865[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 866
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 578[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 405
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 662[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 406
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 579[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 240
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 706[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 580
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 710[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 581
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 322[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 489
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 345[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 582
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 509[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1237
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 346[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 471
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 286[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 287
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1187[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 436
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 757[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 760
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 761[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 762
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 763[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 764
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 765[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 766
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 767[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 768
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 769[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 770
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 771[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 772
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 773[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 774
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 775[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 776
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 777[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 778
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 779[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 780
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 781[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 782
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 783[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 784
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 785[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 786
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 787[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 788
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 789[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 790
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 791[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 792
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 793[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 794
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 795[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 796
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 797[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 798
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 799[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 800
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 867[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 868
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 869[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 870
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 871[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 872
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 873[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 874
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 875[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 876
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 877[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 878
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 879[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 880
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 881[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 631
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 630[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 629
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 136[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 628
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 627[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 626
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 625[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 624
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 623[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 955
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 956[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 957
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 958[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 959
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 960[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 961
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 962[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 963
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 964[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 965
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 966[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 967
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 968[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 969
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 970[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 971
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 972[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 973
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 135[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 622
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 621[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 620
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 619[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 618
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 608[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 607
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 606[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 605
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 604[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 603
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 602[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 601
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 600[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 599
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 598[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 597
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 596[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 595
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 594[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 593
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1020[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1021
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1022[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1023
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1024[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1025
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1026[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1027
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1028[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 592
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 591[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 590
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 589[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1033
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1034[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1035
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 134[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 133
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 132[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 131
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 130[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 129
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 588[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 587
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 586[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 585
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 584[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 583
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 106[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 105
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 104[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 103
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 102[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 101
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 100[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 99
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 98[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 97
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 96[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 95
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 94[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 93
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 92[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 91
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 90[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 89
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 88[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 87
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 86[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 85
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 84[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 83
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 82[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 81
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 80[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 79
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 78[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 77
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 76[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 75
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 74[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 73
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 72[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 71
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 70[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 69
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 68[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 67
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1108[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 66
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 65[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 64
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 63[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 62
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 61[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 60
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 59[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 58
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 57[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 56
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 38[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 37
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1180[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1181
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1182[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1183
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1184[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1185
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1186[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1188
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1189[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1190
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1191[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1203
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1204[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1205
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1206[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1207
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1208[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1216
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1217[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1218
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1129[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 347
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 349[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 348
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 350[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 394
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 392[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 732
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 393[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 714
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 351[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 485
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1066[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 352
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 825[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1132
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1130[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1131
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1109[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 801
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 821[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 39
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 824[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 822
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 831[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 830
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 829[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 828
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 827[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 826
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 40[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 823
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1110[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 805
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 804[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 803
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 653[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 635
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 837[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 482
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 645[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 353
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 882[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 883
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 354[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 504
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 487[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 191
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 884[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1133
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 806[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 807
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 334[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 335
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 486[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 137
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 700[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 681
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 808[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1161
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 816[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 815
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 814[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 813
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 812[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 811
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 810[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1135
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1036[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1111
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1136[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 818
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 817[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 809
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1037[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1038
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1134[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 41
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 819[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 887
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1251[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 477
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 671[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 820
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 698[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 323
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 841[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 843
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 842[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 840
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 839[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 833
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 380[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 126
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 127[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 640
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 355[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 379
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 737[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 715
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 8[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 425
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 320[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 834
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 835[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 319
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 722[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 723
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 724[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 725
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 726[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 720
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 321[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 721
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 718[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 716
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 717[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 719
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 728[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 727
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 729[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 1113
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 356[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 836
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."hotspot_id" = 701[0m
+  Rendered hotspots/index.html.erb within layouts/application (6733.5ms)
+  Rendered layouts/_nav.html.erb (2.6ms)
+Completed 200 OK in 7070ms (Views: 6301.8ms | ActiveRecord: 702.7ms)
+
+
+Started GET "/hotspots/hs_near_user" for 127.0.0.1 at 2013-06-11 14:18:40 -0400
+Processing by HotspotsController#hs_near_user as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mHotspot Load (9.6ms)[0m  [1mSELECT hotspots.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((0.0 - hotspots.latitude) * PI() / 180 / 2), 2) + COS(0.0 * PI() / 180) * COS(hotspots.latitude * PI() / 180) * POWER(SIN((0.0 - hotspots.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(hotspots.longitude - 0.0), RADIANS(hotspots.latitude - 0.0))) + 360 AS decimal) % 360 AS bearing FROM "hotspots" WHERE (hotspots.latitude BETWEEN -0.0026775379875506873 AND 0.0026775379875506873 AND hotspots.longitude BETWEEN -0.0026775379875506873 AND 0.0026775379875506873 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((0.0 - hotspots.latitude) * PI() / 180 / 2), 2) + COS(0.0 * PI() / 180) * COS(hotspots.latitude * PI() / 180) * POWER(SIN((0.0 - hotspots.longitude) * PI() / 180 / 2), 2))) <= 0.185) ORDER BY distance ASC[0m
+  Rendered hotspots/hs_near_user.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+Completed 200 OK in 144ms (Views: 86.4ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-11 14:24:22 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (2.6ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.6ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (2.1ms)[0m  DELETE FROM "users"
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "ratings"[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (11.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "latitude", "location", "longitude", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", Tue, 11 Jun 2013 18:25:49 UTC +00:00], ["email", nil], ["latitude", 40.723352], ["location", "246 Mott st. Ny, Ny,"], ["longitude", -73.99449899999999], ["name", "Brian"], ["updated_at", Tue, 11 Jun 2013 18:25:49 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "latitude", "location", "longitude", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", Tue, 11 Jun 2013 18:25:49 UTC +00:00], ["email", nil], ["latitude", 40.7399977], ["location", "10 E 21st st. Ny, Ny,"], ["longitude", -73.9900976], ["name", "General Assembly"], ["updated_at", Tue, 11 Jun 2013 18:25:49 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "latitude", "location", "longitude", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", Tue, 11 Jun 2013 18:25:49 UTC +00:00], ["email", nil], ["latitude", 40.864223], ["location", "97 Arden st, Ny, Ny,"], ["longitude", -73.928242], ["name", "george"], ["updated_at", Tue, 11 Jun 2013 18:25:49 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "latitude", "location", "longitude", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", Tue, 11 Jun 2013 18:25:50 UTC +00:00], ["email", nil], ["latitude", 40.7569744], ["location", "533 9th ave. Ny, Ny."], ["longitude", -73.9939184], ["name", "mike"], ["updated_at", Tue, 11 Jun 2013 18:25:50 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "latitude", "location", "longitude", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", Tue, 11 Jun 2013 18:25:50 UTC +00:00], ["email", nil], ["latitude", 40.7056777], ["location", "20 exchange, 10005"], ["longitude", -74.0094714], ["name", "remy"], ["updated_at", Tue, 11 Jun 2013 18:25:50 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "latitude", "location", "longitude", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", Tue, 11 Jun 2013 18:25:50 UTC +00:00], ["email", nil], ["latitude", 40.7569744], ["location", "533 9th ave. ny. ny."], ["longitude", -73.9939184], ["name", "lee"], ["updated_at", Tue, 11 Jun 2013 18:25:50 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-11 14:25:53 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/hs_near_user" for 127.0.0.1 at 2013-06-11 14:26:17 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"hs_near_user"}
+  [1m[35mUser Load (1.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "hs_near_user"]]
+Completed 404 Not Found in 7ms
+
+ActiveRecord::RecordNotFound - Couldn't find User with id=hs_near_user:
+  activerecord (3.2.11) lib/active_record/relation/finder_methods.rb:341:in `find_one'
+  activerecord (3.2.11) lib/active_record/relation/finder_methods.rb:312:in `find_with_ids'
+  activerecord (3.2.11) lib/active_record/relation/finder_methods.rb:107:in `find'
+  activerecord (3.2.11) lib/active_record/querying.rb:5:in `find'
+  app/controllers/users_controller.rb:31:in `show'
+  actionpack (3.2.11) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.11) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.11) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:414:in `_run__4138999842513149088__process_action__4141996864777833578__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.11) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.11) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.11) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.11) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.11) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.11) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.11) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.11) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.11) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  meta_request (0.2.6) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.2.6) lib/meta_request/middlewares/headers.rb:16:in `call'
+  meta_request (0.2.6) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__1026763522642391103__call__2109336841462537154__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70342219743220/variables" for 127.0.0.1 at 2013-06-11 14:26:18 -0400
+
+
+Started GET "/hotspots/hs_near_user" for 127.0.0.1 at 2013-06-11 14:26:46 -0400
+Processing by HotspotsController#hs_near_user as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mHotspot Load (1.9ms)[0m  SELECT hotspots.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.723352 - hotspots.latitude) * PI() / 180 / 2), 2) + COS(40.723352 * PI() / 180) * COS(hotspots.latitude * PI() / 180) * POWER(SIN((-73.99449899999999 - hotspots.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(hotspots.longitude - -73.99449899999999), RADIANS(hotspots.latitude - 40.723352))) + 360 AS decimal) % 360 AS bearing FROM "hotspots" WHERE (hotspots.latitude BETWEEN 40.72067446201245 AND 40.72602953798755 AND hotspots.longitude BETWEEN -73.99803198493706 AND -73.99096601506292 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.723352 - hotspots.latitude) * PI() / 180 / 2), 2) + COS(40.723352 * PI() / 180) * COS(hotspots.latitude * PI() / 180) * POWER(SIN((-73.99449899999999 - hotspots.longitude) * PI() / 180 / 2), 2))) <= 0.185) ORDER BY distance ASC
+  Rendered hotspots/hs_near_user.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+Completed 200 OK in 109ms (Views: 24.7ms | ActiveRecord: 2.4ms)
