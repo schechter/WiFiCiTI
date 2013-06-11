@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 
+
   def find_me
     @user = User.new(name: 'guest', location: request.remote_ip)
   end
@@ -10,7 +11,6 @@ class UsersController < ApplicationController
 
   def create
     user = User.new(params[:user])
-
     if user.save!
       redirect_to user
     else
@@ -20,7 +20,7 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new()
+    @user = User.new
   end
 
   def edit

@@ -16,4 +16,10 @@ HotspotApp::Application.routes.draw do
 
   root to: 'hotspots#index'
 
+  get 'session/new' => 'session#new'
+  post 'sessons' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+  post 'update_location' => 'sessions#update'
+
+
 end

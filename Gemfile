@@ -7,7 +7,8 @@ gem 'httparty'
 gem 'json'
 gem 'font-awesome-sass-rails'
 gem 'geocoder'
-gem 'gmaps4rails'
+gem 'haml'
+gem 'bcrypt-ruby'
 
 
 group :development do

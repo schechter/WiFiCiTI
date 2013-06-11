@@ -31,6 +31,7 @@ GEM
     annotate (2.5.0)
       rake
     arel (3.0.2)
+    bcrypt-ruby (3.0.1)
     better_errors (0.9.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -61,7 +62,8 @@ GEM
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
     geocoder (1.1.8)
-    gmaps4rails (1.5.6)
+    haml (4.0.3)
+      tilt
     hike (1.2.3)
     httparty (0.11.0)
       multi_json (~> 1.0)
@@ -155,12 +157,13 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  bcrypt-ruby
   better_errors
   binding_of_caller
   coffee-rails (~> 3.2.1)
   font-awesome-sass-rails
   geocoder
-  gmaps4rails
+  haml
   httparty
   jquery-rails
   json
