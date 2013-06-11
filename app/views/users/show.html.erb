@@ -4,6 +4,5 @@
 <p>This user's location:<%= @user.location %></p>
 <p>This user's latitude:<%= @user.latitude %></p>
 <p>This user's longitude:<%= @user.longitude %></p>
-
 <%= button_to 'Edit your account', edit_user_path(@user), method: 'get' %>
 <%= button_to 'Delete your account', user_path(@user), method: 'delete' %>
