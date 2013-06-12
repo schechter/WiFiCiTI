@@ -22,4 +22,10 @@ HotspotApp::Application.routes.draw do
   post 'update_location' => 'sessions#update'
 
 
+  get 'session/new' => 'session#new'
+  post 'sessons' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+  post 'update_location' => 'sessions#update'
+
+
 end
