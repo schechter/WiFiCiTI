@@ -1,0 +1,9 @@
+<footer>
+  <div class='row'>
+    <div class='small-8 small-center columns'>
+      <% if current_user %>
+        <p>You are signed in as <%= current_user.email %></p>
+      <% end %>
+    </div>
+  </div>
+</footer>

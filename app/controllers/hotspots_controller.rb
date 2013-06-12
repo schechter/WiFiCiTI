@@ -8,10 +8,7 @@ class HotspotsController < ApplicationController
   def get_addresses_from_hs_array(hs_array) #takes an array of hotspots and returns and array of arrays of lat&long
     addresses = []
     hs_array.each do |hs|
-      location =[]
-      location << hs.latitude
-      location << hs.longitude
-      addresses << location
+      addresses << [hs.latitude, hs.longitude]
     end
     addresses  #returns any [array of [arrays containing lat and long BigDecimal numbers]]
   end
@@ -106,7 +103,7 @@ class HotspotsController < ApplicationController
     redirect_to root_path, success: 'The Database has been successfully updated'
   end
 
-def hs_near_user
+  def hs_near_user
     hotspots = Hotspot.near(User.all[1...6].first.location,0.185)  #just using dumby user for now.  need to pass in the user here
     @map_url = hot_spots_map(address_to_marker_generator(get_addresses_from_hs_array(hotspots)))
   end

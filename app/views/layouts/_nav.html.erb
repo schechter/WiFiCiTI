@@ -2,7 +2,7 @@
   <ul class="title-area">
     <!-- Title Area -->
     <li class="name">
-      <h1><a href="#">WiFiCiTi </a></h1>
+      <h1><%= link_to 'WiFiCiTi', root_path %></h1>
     </li>
     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -28,7 +28,11 @@
 
     <ul class='right'>
       <li class="divider"></li>
-      <li><%= link_to 'Sign in' %></li>
+      <% if current_user %>
+        <li><%= link_to "Sign Out", logout_path, method: :delete %>
+      <% else %>
+        <li><%= link_to 'Sign in', login_path %></li>
+      <% end %>
     </ul>
 
 

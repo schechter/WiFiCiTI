@@ -1,9 +1,11 @@
-.hotspot-teaser{
-	border: 1px solid #aaa;
-	padding: 10px;
-	margin: 10px;
-	min-height: 200px;
+body{background:#ddd;}
+
+#mainWrapper{
+border:3px solid #aaa;
+background:#fff;margin-top:25px;
 }
 
-body{background:#ddd;}
-#mainWrapper{border:3px solid #aaa; background:#fff;margin-top:25px;}
+.hotspot-teaser{
+border-bottom: 3px solid #ccc;
+padding:15px;
+}

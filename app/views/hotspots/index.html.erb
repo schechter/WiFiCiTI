@@ -3,17 +3,17 @@
 	<h2>NYC WiFi HOTSPOTS</h2>
 	<h3><%= @hotspots.count %> available hotspots</h3>
 	<% @hotspots.each do |hotspot| %>
-		<div class='small-6 large-4 columns'>
+		<div class='small-12 columns'>
 			<div class='hotspot-teaser'>
-				<strong><%= hotspot.id %> <%= hotspot.name %></strong> <small><%= link_to 'delete hotspot', hotspot, method: :delete %></small><br />
+				<strong><%= hotspot.id %><br />
+					<%= hotspot.name %></strong>  <small><%= link_to 'delete hotspot', hotspot, method: :delete %></small><br />
 				<%= hotspot.street %>, <%= hotspot.city %> <%= hotspot.zip %><br />
 				<br />
 				<strong><%= hotspot.fee %> wifi</strong><br />
 				<%= hotspot.phone %><br />
 				<%= link_to 'website', hotspot.url  unless hotspot.url == " " %>
 				<br />
-				<br />
-				<%= link_to "#{pluralize(hotspot.ratings.count, 'rating')}",hotspot %><br />
+				<%= link_to "#{pluralize(hotspot.ratings.count, 'rating')}",hotspot %>  |  
 				<%= link_to 'rate this hotspot', new_rating_path(id: hotspot.id) %>
 			</div>
 		</div>

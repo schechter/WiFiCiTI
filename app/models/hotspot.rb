@@ -30,5 +30,9 @@ class Hotspot < ActiveRecord::Base
   validates :latitude, numericality: true, allow_blank: false
   validates :longitude, numericality: true, allow_blank: false
 
+  def self.find_hs(user)
+    Hotspot.near([user.latitude, 
+      user.longitude], 0.2, order: :distance)
+  end
 
 end

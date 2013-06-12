@@ -1,12 +1,25 @@
 class UsersController < ApplicationController
-
-
-  def find_me
-    @user = User.new(name: 'guest', location: request.remote_ip)
-  end
   
   def index
     @users = User.all
+  end
+
+  def show
+    @user = User.find(params[:id])
+  end
+
+  def find_me
+    #@user_location = Geocoder.search(request.remote_ip).first.data
+    @user_location = Geocoder.search("207.38.216.253").first.data #TEST IP.. REPLACE WITH ABOVE LINE IN PROD
+    if current_user
+      @hotspots = Hotspot.find_hs(current_user)
+    else
+      # NEED TO ADD CODE FOR NON AUTHED USER HERE
+    end
+  end
+
+  def new
+    @user = User.new
   end
 
   def create
@@ -19,15 +32,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def new
-    @user = User.new
-  end
-
   def edit
-    @user = User.find(params[:id])
-  end
-
-  def show
     @user = User.find(params[:id])
   end
 

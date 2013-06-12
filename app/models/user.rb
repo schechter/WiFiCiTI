@@ -16,6 +16,8 @@
 class User < ActiveRecord::Base
   attr_accessible :email, :latitude, :location, :longitude, :name, :password
   
+  has_secure_password
+  
   geocoded_by :location
   after_validation :geocode
 

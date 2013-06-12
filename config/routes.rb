@@ -16,16 +16,11 @@ HotspotApp::Application.routes.draw do
 
   root to: 'static_pages#home'
 
-  get 'session/new' => 'session#new'
+  resources :sessions #temp for testing..remove me for producion
+
+  get '/login' => 'sessions#new'
   post 'sessons' => 'sessions#create'
-  delete 'logout' => 'sessions#destroy'
+  match '/logout' => 'sessions#destroy'
   post 'update_location' => 'sessions#update'
-
-
-  get 'session/new' => 'session#new'
-  post 'sessons' => 'sessions#create'
-  delete 'logout' => 'sessions#destroy'
-  post 'update_location' => 'sessions#update'
-
 
 end

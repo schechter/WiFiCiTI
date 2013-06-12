@@ -1,5 +1,40 @@
-YOUR ARE LOCATED AT:<br />
-<%= @user.name %><br />
-<%= @user.location %><br />
-<%= @user.latitude %><br />
-<%= @user.longitude %><br />
+<% x = "http://maps.googleapis.com/maps/api/staticmap?size=680x480&markers=icon:http://goo.gl/3KRsr" %>
+<% @hotspots.each do |hotspot| %>
+    <% y = "|#{hotspot['latitude'].to_f},#{ hotspot['longitude'].to_f}" %>
+    <% x = x + y %>
+<% end %>
+<% x += "&sensor=false" %>
+
+<!-- EVERYTHING ABOVE THIS LINE IS SIMPLY GENERATING THE GOOGLE MAPS LINK..  I'M SURE THERE IS A BETTER WAY TO DO THIS (IN YOUR METHODS) AND WE CAN DELETE AFTER DISCUSSION -->
+
+<div class='row'>
+  <div class='small-12 columns'>
+    <p>Based on your IP address, we think you are in <%= @user_location['region_name'] %>, <%= @user_location['city'] %></p>
+  </div>
+
+  <div class='small-8 columns'>
+    Hotspots:<br />
+    <img src="<%= x %>">
+  </div>
+
+  <div class='small-4 columns'>
+    <% c = 1 %>
+    <ul>
+    <% @hotspots.each do |hotspot| %>
+    <li><%= "#{c}: #{hotspot.name}" %><br />
+    <%= "#{hotspot.street}, #{hotspot.city}" %><br />
+    <%= hotspot.phone %><br />
+    <%= link_to "#{pluralize(hotspot.ratings.count, 'rating')}",hotspot %>
+  </li>
+    <% c += 1 %>
+    <% end %>
+  </ul>
+  </div>
+
+  <div class='small-12 columns'>
+    <p>For more accurate hotspot suggestions, please enter your current address below and press <strong>Find Me</strong></p>
+
+    <!-- ADD A FORM TO ENTER STREET ADDRESS HERE -->
+
+  </div>
+</div>
