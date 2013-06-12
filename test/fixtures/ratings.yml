@@ -1,3 +1,20 @@
+# == Schema Information
+#
+# Table name: ratings
+#
+#  id            :integer          not null, primary key
+#  hotspot_id    :integer
+#  user_id       :integer
+#  speed         :integer
+#  reliability   :integer
+#  accessibility :integer
+#  power         :integer
+#  noise_level   :integer
+#  comments      :text
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
