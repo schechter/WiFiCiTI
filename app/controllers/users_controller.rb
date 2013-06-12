@@ -23,8 +23,12 @@ class UsersController < ApplicationController
   end
 
   def create
+    p 'params, email, id ++++++++_________+=========='
+    p params
+    p params[:email]
+
     user = User.new(params[:user])
-    if user.save!
+    if user.save
       redirect_to user
     else
       # flash error message to user that create didn't work

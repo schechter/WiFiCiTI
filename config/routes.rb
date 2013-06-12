@@ -10,7 +10,7 @@ HotspotApp::Application.routes.draw do
   resources :hotspots do
     collection do
       get 'seed'
-      get 'hs_near_user'
+      get 'map_generator'
     end
   end
 
