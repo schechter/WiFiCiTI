@@ -35,8 +35,6 @@ class Hotspot < ActiveRecord::Base
                   user.longitude], 0.2, order: :distance)
   end
 
-
-
   def self.get_addresses_from_hs_array(hs_array) #takes an array of hotspots and returns and array of arrays of lat&long
     addresses = []
     hs_array.each do |hs|
@@ -52,6 +50,7 @@ class Hotspot < ActiveRecord::Base
     end
     markers  #returns a string of locations, each one starting with a pipe (|) latitude (,) longitude  -no need to be longer than 6 digits after decimal
   end
+
   #commented out this version of the method.  If we want to be able to change the size or icon this one will be more useful.  otherwise use smaller version below
   # def hot_spots_map(markers, map_size = '480x480', map_icon = 'http://goo.gl/3KRsr')
   #   url = ''
