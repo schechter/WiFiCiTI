@@ -14,6 +14,6 @@ HotspotApp::Application.routes.draw do
     end
   end
 
-  root to: 'hotspots#index'
+  root to: 'static_pages#home'
 
 end

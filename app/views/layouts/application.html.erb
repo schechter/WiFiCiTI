@@ -21,13 +21,14 @@
   </head>
 
   <body>
-    <% flash.each do |key, value| %>
-      <%= content_tag(:div, value, class: "alert alert-#{key}") %>
-    <% end %>
-    <%= render 'layouts/nav' %>
-    <%= yield %>
-
-    
-    <%= javascript_include_tag "application" %>
+    <div class='row'>
+      <%= render 'layouts/nav' %>
+      <div id='mainWrapper' class='small-8 small-centered columns'>
+        <% flash.each do |key, value| %>
+          <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+        <% end %>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
