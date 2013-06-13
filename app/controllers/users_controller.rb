@@ -8,14 +8,20 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+
+
   def find_me
-    #@user_location = Geocoder.search(request.remote_ip).first.data
-    @user_location = Geocoder.search("207.38.216.253").first.data #TEST IP.. REPLACE WITH ABOVE LINE IN PROD
-    if current_user
-      @hotspots = Hotspot.find_hs(current_user)
+    if params[:location]
+      @hotspots = Hotspot.near(params[:location], 0.2)
+      p @hotspots
     else
-      # NEED TO ADD CODE FOR NON AUTHED USER HERE
+      user_location = Geocoder.search('208.185.23.206')
+      location = user_location.first.data
+      lat = location['latitude'].to_s
+      long = location['longitude'].to_s 
+      @hotspots = Hotspot.near([lat,long],0.55) 
     end
+    @google_map_url = Hotspot.url_gen(@hotspots)
   end
 
   def new
@@ -23,13 +29,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    p 'params, email, id ++++++++_________+=========='
-    p params
-    p params[:email]
-
     user = User.new(params[:user])
     if user.save
-      redirect_to user
+      redirect_to new_session_path(email: user.email, password: user.password)
     else
       # flash error message to user that create didn't work
       render 'new'

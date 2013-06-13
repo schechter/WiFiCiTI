@@ -3,6 +3,7 @@ HotspotApp::Application.routes.draw do
 	resources :users do
     collection do
       get 'find_me'
+      post 'find_me'
     end
   end
 

@@ -66,7 +66,4 @@ class HotspotsController < ApplicationController
   def map_generator
     @map_url = Hotspot.hs_near_user
   end
-
-
-
 end
