@@ -1,35 +1,35 @@
-
-
-<!-- EVERYTHING ABOVE THIS LINE IS SIMPLY GENERATING THE GOOGLE MAPS LINK..  I'M SURE THERE IS A BETTER WAY TO DO THIS (IN YOUR METHODS) AND WE CAN DELETE AFTER DISCUSSION -->
-
 <div class='row'>
-  <%= form_tag find_me_users_path do %>
-  <%= text_field_tag :location %>
-  <%= submit_tag %>
-  <% end %>
-
-  <img src='<%= @google_map_url %>'>
- 
-
-
-  <div class='small-4 columns'>
-    <% c = 1 %>
-    <ul>
-    <% @hotspots.each do |hotspot| %>
-    <li><%= "#{c}: #{hotspot.name}" %><br />
-    <%= "#{hotspot.street}, #{hotspot.city}" %><br />
-    <%= hotspot.phone %><br />
-    <%= link_to "#{pluralize(hotspot.ratings.count, 'rating')}",hotspot %>
-  </li>
-    <% c += 1 %>
-    <% end %>
-  </ul>
-  </div>
-
   <div class='small-12 columns'>
     <p>For more accurate hotspot suggestions, please enter your current address below and press <strong>Find Me</strong></p>
-
-    <!-- ADD A FORM TO ENTER STREET ADDRESS HERE -->
-
   </div>
+
+  <div class='small-10 columns'>
+    <div class='row collapse'>
+      <%= form_tag find_me_users_path do %>
+      <div class='small-10 columns'>
+        <%= text_field_tag :location, nil, placeholder: 'Enter your location here' %>
+      </div>
+      <div class='small-2 columns'>
+        <%= submit_tag 'find me', class: 'button postfix' %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class='small-8 columns'>
+    <img src='<%= @google_map_url %>'>
+  </div>
+
+  <div class='small-4 columns'>
+    <ul>
+      <% @hotspots.each do |hotspot| %>
+      <li><%= link_to hotspot.name, hotspot %><br />
+        <%= "#{hotspot.street}, #{hotspot.city}" %><br />
+        <%= hotspot.phone %><br />
+        <%= link_to "#{pluralize(hotspot.ratings.count, 'rating')}",hotspot %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+
 </div>

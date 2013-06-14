@@ -1,4 +1,5 @@
 class HotspotsController < ApplicationController
+  before_filter :admin_auth, except: :show
 
   def index
     @hotspots = Hotspot.order('name ASC')
