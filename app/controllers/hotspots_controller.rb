@@ -46,12 +46,11 @@ class HotspotsController < ApplicationController
   end
 
   def seed
-
     data_response = HTTParty.get('https://nycopendata.socrata.com/api/views/ehc4-fktp/rows.json?accessType=DOWNLOAD')
     json = JSON.parse(data_response.body)
     records = json['data']
     records.each do |record|
-     
+
 
 
 
@@ -65,13 +64,13 @@ class HotspotsController < ApplicationController
         url: record[17],
         latitude: record[9][1],
       longitude: record[9][2])
-      
+
     end
     redirect_to root_path, success: 'The Database has been successfully updated'
   end
 
   def map_generator
     @map_url = Hotspot.hs_near_user
-    
+
   end
 end
