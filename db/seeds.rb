@@ -13,3 +13,4 @@ Hotspot.delete_all
 end
 
 
+User.create(email: 'foo@example.com', password: 'bar' admin: true)
