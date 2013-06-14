@@ -1,7 +1,7 @@
 User.delete_all
 #Hotspot.delete_all
 Rating.delete_all
-Hotspot.delete_all
+#Hotspot.delete_all
 
 [['Brian', '246 Mott st. Ny, Ny,', 'abc@example.com'],
  ['General Assembly', '10 E 21st st. Ny, Ny,', 'abcd@example.com'],
