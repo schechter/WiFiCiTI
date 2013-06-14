@@ -51,7 +51,7 @@ class HotspotsController < ApplicationController
     records = json['data']
     records.each do |record|
      
-      while entries < 9900
+      while entries < 900
 
 
       Hotspot.create(
