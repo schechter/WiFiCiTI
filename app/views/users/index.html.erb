@@ -2,11 +2,9 @@
 	<div class='small-12 columns'>
 		<h1>Users</h1>
 		<% @users.each do |user| %>
-			<p>User name: <%= user.name %><br />
+			<p>User name: <%= user.name %> <small><%= link_to 'edit', edit_user_path(user) %> // <%= link_to 'delete', user, method: :destroy, confirm: 'Are you sure?' %></small><br />
 				User email: <%= user.email %><br />
-				User latitude: <%= user.latitude %><br />
-				User longitude: <%= user.longitude %><br />
-				User location: <%= user.location %>
+				Admin: <%= user.admin? %>
 			</p>
 		<% end %>
 	</div>
