@@ -7,7 +7,7 @@ class HotspotsController < ApplicationController
   def show
     @hotspot = Hotspot.find(params[:id])
     @ratings = @hotspot.ratings
-    
+
   end
 
   def new
@@ -49,7 +49,7 @@ class HotspotsController < ApplicationController
     json = JSON.parse(data_response.body)
     records = json['data']
 
-    records.each do |record|
+    records.first(9990).each do |record|
       Hotspot.create(
         name: record[10],
         street: record[12],
