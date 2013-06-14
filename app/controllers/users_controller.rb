@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
-  def show  #users account page
+  def show
     @user = User.find(params[:id])
   end
 
@@ -42,7 +42,8 @@ class UsersController < ApplicationController
   def update
     user = User.find(params[:id])
     if user.update_attributes(params[:user])
-      redirect_to user
+      flash[:success] = "Account has been sucessfully updated"
+      redirect_to root_path
     else
       render 'edit'
     end
@@ -50,6 +51,7 @@ class UsersController < ApplicationController
 
   def destroy
     User.find(params[:id]).delete
-    redirect_to #where to go after we delete the user
+    flash[:success] = "Account has been sucessfully removed"
+    redirect_to root_path
   end
 end
