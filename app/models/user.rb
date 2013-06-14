@@ -18,6 +18,10 @@ class User < ActiveRecord::Base
   
   has_secure_password
   
+  validates :name, presence: true, length: {in: 4..20}
+  validates :email, presence: true, length: {in: 6..30}, :uniqueness => true
+  validates :password, presence: true, length: {in: 6..15}
+
 
 
   has_many :ratings

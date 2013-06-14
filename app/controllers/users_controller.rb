@@ -10,7 +10,6 @@ class UsersController < ApplicationController
   end
 
   def find_me
-
     if params[:location]
       @hotspots = Hotspot.near(params[:location], 0.2)
     else
@@ -28,12 +27,14 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.new(params[:user])
-    if user.save
+    @user = User.new(params[:user])
+    p 'entered create ==============='
+    if @user.save
+      p 'entereed saved sucess --------------------'
       redirect_to new_session_path(email: user.email, password: user.password)
     else
-      # flash error message to user that create didn't work
-      render 'new'
+      p 'flash error message to user that create didnt work'
+      render :new
     end
   end
 
