@@ -10,9 +10,10 @@ class UsersController < ApplicationController
 
   def find_me
     #@user_location = Geocoder.search(request.remote_ip).first.data
-    @user_location = Geocoder.search("207.38.216.253").first.data #TEST IP.. REPLACE WITH ABOVE LINE IN PROD
-    if current_user
-      @hotspots = Hotspot.find_hs(current_user)
+    if params(:location).nil
+      @user_location = Geocoder.search("207.38.216.253").first.data #TEST IP.. REPLACE WITH ABOVE LINE IN PROD
+    else
+      @hotspots = Hotspot.near(current_user)
     else
       # NEED TO ADD CODE FOR NON AUTHED USER HERE
     end
