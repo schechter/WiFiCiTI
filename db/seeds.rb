@@ -1,5 +1,5 @@
 User.delete_all
-#Hotspot.delete_all
+Hotspot.delete_all
 Rating.delete_all
 #Hotspot.delete_all
 

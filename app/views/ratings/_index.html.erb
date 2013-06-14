@@ -1,0 +1,13 @@
+	<h1>Here's the patrial</h1>
+<% object.ratings.each do |rating| %>
+<ul>
+
+	<li> <%= rating.speed %></li>
+	<li> <%= rating.reliability %></li>
+	<li> <%= rating.accessibility %></li>
+	<li> <%= rating.power %></li>
+	<li> <%= rating.noise_level %></li>
+	<br>
+	<li> <%= rating.comments %></li>
+	<% end %>
+</ul>
