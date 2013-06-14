@@ -7,6 +7,7 @@ class HotspotsController < ApplicationController
   def show
     @hotspot = Hotspot.find(params[:id])
     @ratings = @hotspot.ratings
+    
   end
 
   def new
@@ -66,7 +67,4 @@ class HotspotsController < ApplicationController
   def map_generator
     @map_url = Hotspot.hs_near_user
   end
-
-
-
 end

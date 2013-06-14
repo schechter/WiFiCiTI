@@ -13,16 +13,14 @@
     <!-- Left Nav Section -->
     <ul class="left">
       <li class="divider"></li>
-      <li><%= link_to 'Locate me', find_me_users_path %></li>
+      <li><%= link_to 'Find Wifi', find_me_users_path %></li>
       <li class="divider"></li>
+      <% if current_user && current_user.admin %>
       <li><%= link_to 'Hotspot Directory', hotspots_path %></li>
       <li class="divider"></li>
       <li class='has-dropdown'><a>Users</a>
-        <ul class='dropdown'>
-          <li><%= link_to 'view users', users_path %></li>
-          <li><%= link_to 'new user', new_user_path %></li>
-        </ul>
-      </li>
+      <li><%= link_to 'view users', users_path %></li>
+      <% end %>
       <li class="divider"></li>
     </ul>
 
@@ -31,10 +29,15 @@
       <% if current_user %>
         <li><%= link_to "Sign Out", logout_path, method: :delete %>
       <% else %>
+        <li><%= link_to 'Register', new_user_path %></li>
         <li><%= link_to 'Sign in', login_path %></li>
       <% end %>
     </ul>
-
-
+    
   </section>
 </nav>
+<% if current_user && current_user.admin? %>
+    logged in as admin
+    <% else %>
+    not logged in as admin
+    <% end %>
