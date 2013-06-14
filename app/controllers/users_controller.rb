@@ -1,14 +1,12 @@
 class UsersController < ApplicationController
   
-  def index
+  def index  #just for admin
     @users = User.all
   end
 
-  def show
+  def show  #users account page
     @user = User.find(params[:id])
   end
-
-
 
   def find_me
     if params[:location]
