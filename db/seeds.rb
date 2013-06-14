@@ -13,3 +13,4 @@ Hotspot.delete_all
 end
 
 
+User.create(name: 'foo', password: 'bar' admin: true)
