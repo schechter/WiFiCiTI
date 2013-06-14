@@ -1,5 +1,6 @@
 <div class='row'>
 	<div class='small-12 columns'>
+	<%= render partial: 'shared/errors', locals: {object: @rating} %>
 		<h1>Rating <%= @hotspot.name %>'s WiFi</h1>
 		<%= form_for @rating do |f| %>
 		<%= f.hidden_field :hotspot_id, value: @hotspot.id %>
