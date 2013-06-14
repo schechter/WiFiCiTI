@@ -28,12 +28,9 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-    p 'entered create ==============='
     if @user.save
-      p 'entereed saved sucess --------------------'
       redirect_to new_session_path(email: user.email, password: user.password)
     else
-      p 'flash error message to user that create didnt work'
       render :new
     end
   end

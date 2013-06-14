@@ -9,4 +9,7 @@
 		<%= button_to 'Edit your account', edit_user_path(@user), method: 'get' %>
 		<%= button_to 'Delete your account', user_path(@user), method: 'delete' %>
 	</div>
+	<h5>Your Previous Ratings</h5>
+	<%= render partial: '/views/ratings/index', locals: {object: @user} %>
+
 </div>
