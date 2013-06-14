@@ -2,8 +2,13 @@
 	<div class='small-12 columns'>
 		<h1>Rating <%= @hotspot.name %>'s WiFi</h1>
 		<%= form_for @rating do |f| %>
-			<%= render 'form_fields', f: f %>
+		<%= f.hidden_field :hotspot_id, value: @hotspot.id %>
+		<%= f.number_field :speed, in: 1..5, placeholder: 'Rate Speed (1-5)' %>
+		<%= f.number_field :reliability, in: 1..5, placeholder: 'Rate reliability (1-5)' %>
+		<%= f.number_field :accessibility, in: 1..5, placeholder: 'Rate accessibility (1-5)' %>
+		<%= f.number_field :power, in: 1..5, placeholder: 'Rate power outlets (1-5)' %>
+		<%= f.number_field :noise_level, in: 1..5, placeholder: 'Rate noise level (1-5)' %>
+		<%= f.submit "check-in at #{@hotspot.name}", class: 'button' %>
 		<% end %>
-
 	</div>
 </div>

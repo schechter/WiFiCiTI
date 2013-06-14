@@ -18,8 +18,7 @@ class User < ActiveRecord::Base
   
   has_secure_password
   
-  geocoded_by :location
-  after_validation :geocode
+
 
   has_many :ratings
   has_many :hotspots, through: :ratings
