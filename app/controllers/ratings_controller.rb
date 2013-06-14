@@ -5,15 +5,16 @@ class RatingsController < ApplicationController
 	end
 
 	def new
-		@hotspot = Hotspot.find(11800)        #(params[:id])  needs to be replaced by actual hs.
+		@hotspot = Hotspot.find(params[:id]) 
 		@rating = Rating.new
 	end
 
 	def create
+		p params
 		@rating = Rating.new(params[:rating])
-		@hotspot = Hotspot.find(11800)        #(params[:id])`
+		@hotspot = Hotspot.find(params[:rating][:hotspot_id])
 		if @rating.save
-			redirect_to root_path, success: "You have successfully checked-in and rated #{hotspot.name}"
+			redirect_to root_path, success: "You have successfully checked-in and rated #{@hotspot.name}"
 		else
 			render 'new'
 		end
