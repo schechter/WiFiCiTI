@@ -8,7 +8,7 @@ class HotspotsController < ApplicationController
   def show
     @hotspot = Hotspot.find(params[:id])
     @ratings = @hotspot.ratings
-    
+
   end
 
   def new
@@ -46,11 +46,15 @@ class HotspotsController < ApplicationController
   end
 
   def seed
+    entries = 0
     data_response = HTTParty.get('https://nycopendata.socrata.com/api/views/ehc4-fktp/rows.json?accessType=DOWNLOAD')
     json = JSON.parse(data_response.body)
     records = json['data']
-
     records.each do |record|
+     
+      while entries < 900
+
+
       Hotspot.create(
         name: record[10],
         street: record[12],
@@ -61,6 +65,8 @@ class HotspotsController < ApplicationController
         url: record[17],
         latitude: record[9][1],
       longitude: record[9][2])
+      entries += 1
+      end
     end
     redirect_to root_path, success: 'The Database has been successfully updated'
   end
