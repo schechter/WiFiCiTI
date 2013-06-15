@@ -1,7 +1,10 @@
 <div class='row'>
+	<h3>Here's the ratings form</h3>
 	<div class='small-12 columns'>
 	<%= render partial: 'shared/errors', locals: {object: @rating} %>
+
 		<h1>Rating <%= @hotspot.name %>'s WiFi</h1>
+
 		<%= form_for @rating do |f| %>
 		<%= f.hidden_field :hotspot_id, value: @hotspot.id %>
 		<%= f.number_field :speed, in: 1..5, placeholder: 'Rate Speed (1-5)' %>

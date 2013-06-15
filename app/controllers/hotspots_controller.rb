@@ -8,7 +8,7 @@ class HotspotsController < ApplicationController
   def show
     @hotspot = Hotspot.find(params[:id])
     @ratings = @hotspot.ratings
-
+    @rating = Rating.new
   end
 
   def new

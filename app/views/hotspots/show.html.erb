@@ -20,4 +20,5 @@
 	</div>
 	<h3><%= @hotspot.name %>'s Ratings</h3>
 	<%= render partial: '/ratings/index', locals: {object: @hotspot} %>
+	<%= render partial: '/ratings/new', locals: {object: @hotspot} %>
 </div>
