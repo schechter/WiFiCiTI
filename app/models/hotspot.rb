@@ -31,7 +31,8 @@ class Hotspot < ActiveRecord::Base
   validates :longitude, numericality: true, allow_blank: false
 
   def self.find_by_address(user_location)
-    Hotspot.near(user_location, 0.3)
+    Hotspot.near(user_location, 0.35, order: 'distance').all[0..20]
+
   end
 
   def self.find_by_ip_address
@@ -48,7 +49,7 @@ class Hotspot < ActiveRecord::Base
       markers = "|#{hotspot['latitude'].to_f},#{ hotspot['longitude'].to_f}"
       google_map += markers
     end
-    google_map += "&sensor=false"
+    google_map += "&maptype=terrain&sensor=false"
   end
 
 end
