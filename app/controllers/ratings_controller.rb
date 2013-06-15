@@ -10,7 +10,8 @@ class RatingsController < ApplicationController
 	end
 
 	def create
-
+		p params
+		p params[:rating]
 		@rating = Rating.new(params[:rating])
 		@hotspot = Hotspot.find(params[:rating][:hotspot_id])
 		if @rating.save

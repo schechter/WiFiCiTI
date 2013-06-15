@@ -9,6 +9,7 @@ class HotspotsController < ApplicationController
     @hotspot = Hotspot.find(params[:id])
     @ratings = @hotspot.ratings
     @rating = Rating.new
+    @google_map_url = Hotspot.url_gen([@hotspot])
   end
 
   def new

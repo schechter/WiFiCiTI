@@ -1,10 +1,9 @@
 <div class='row'>
 	<div class='small-12 columns'>
-		<h1>Show Page for <%= @hotspot.name %></h1>
-
-		<h3>Info:</h3>
-		Add hotspot info &amp; map here</p>
-		<h3>Ratings</h3>
+		<h1>You're checked in at: <%= @hotspot.name %></h1>
+		<h4><%= @hotspot.name %></h1>
+		<h5><%= @hotspot.street %>, <%= @hotspot.city %>, <%= @hotspot.zip %>: <%= @hotspot.phone %></h1>
+		<img src='<%= @google_map_url %>'>
 		<% if @ratings.nil? %>
 			<p>There are no ratings but your code is working</p>
 		<% else %>
@@ -15,3 +14,5 @@
 
 	<%= render partial: '/ratings/new', locals: {object: @hotspot} %>
 </div>
+
+
