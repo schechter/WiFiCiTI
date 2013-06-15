@@ -11,13 +11,19 @@ class UsersController < ApplicationController
 
   def find_me
     if params[:location]
-      @hotspots = Hotspot.near(params[:location], 0.2)
+      @hotspots = Hotspot.near(params[:location], 0.3)
+      puts '+++++++++++++++++++++++++++'
+      puts '+++++++++++++++++++++++++++'
+      puts @hotspots
     else
       user_location = Geocoder.search('208.185.23.206')
       location = user_location.first.data
       lat = location['latitude'].to_s
-      long = location['longitude'].to_s 
-      @hotspots = Hotspot.near([lat,long],0.55) 
+      long = location['longitude'].to_s
+      puts '+++++++++++++++++++++++++++' 
+      @hotspots = Hotspot.near([lat,long],0.3)
+      puts '+++++++++++++++++++++++++++'
+      puts @hotspots
     end
     @google_map_url = Hotspot.url_gen(@hotspots)
   end
@@ -40,12 +46,12 @@ class UsersController < ApplicationController
   end
 
   def update
-    user = User.find(params[:id])
-    if user.update_attributes(params[:user])
+    @user = User.find(params[:id])
+    if @user.update_attributes(params[:user])
       flash[:success] = "Account has been sucessfully updated"
       redirect_to root_path
     else
-      render 'edit'
+      render :edit
     end
   end
 

@@ -16,10 +16,13 @@
       <li><%= link_to 'Find Wifi', find_me_users_path %></li>
       <li class="divider"></li>
       <% if current_user && current_user.admin %>
-      <li><%= link_to 'Hotspot Directory', hotspots_path %></li>
-      <li class="divider"></li>
-      <li><%= link_to 'View Users', users_path %></li>
-      <li class="divider"></li>
+        <li><%= link_to 'Hotspot Directory', hotspots_path %></li>
+        <li class="divider"></li>
+        <li><%= link_to 'View Users', users_path %></li>
+        <li class="divider"></li>
+      <% else %>
+        <li><%= link_to 'My Account', current_user %></li>
+        <li class="divider"></li>
       <% end %>
     </ul>
 

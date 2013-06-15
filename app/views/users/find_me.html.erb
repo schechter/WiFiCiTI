@@ -17,7 +17,11 @@
   </div>
 
   <div class='small-8 columns'>
-    <img src='<%= @google_map_url %>'>
+    <% if @hotspots.empty? %>
+      <p>Unfortunately we could not find any hotspots near the address you entered.  Please enter a new address</p>
+    <% else %>
+      <img src='<%= @google_map_url %>'>
+    <% end %>
   </div>
 
   <div class='small-4 columns'>

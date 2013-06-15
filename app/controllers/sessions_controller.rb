@@ -4,17 +4,19 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by_email(params[:email])
-    if user
-      authenticated_user = user.authenticate(params[:password])
+    @user = User.find_by_email(params[:email])
+    if @user
+      authenticated_user = @user.authenticate(params[:password])
       if authenticated_user
         session[:user_id] = authenticated_user.id
         redirect_to root_path
       else
-        redirect_to new_session_path
+        flash[:fail] = "We're sorry.  Either your email or password was incorrect"
+        render :new
       end
     else
-      render text: 'Unknown email or password- go back and try again...'
+      flash[:fail] = "You don't currently have an account.  Please create an account now!"
+      redirect_to new_user_path
     end
   end
 
