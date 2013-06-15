@@ -51,9 +51,6 @@ class HotspotsController < ApplicationController
     records = json['data']
     records.each do |record|
 
-
-
-
       Hotspot.create(
         name: record[10],
         street: record[12],
