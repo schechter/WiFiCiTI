@@ -25,7 +25,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      redirect_to new_session_path
+      session[:user_id] = @user.id
+      flash[:success] = 'Thanks for creating an account with WiFiCiTi!'
+      redirect_to root_path
     else
       flash[:fail] = 'There was an error creating your account.  Please try again'
       render :new
