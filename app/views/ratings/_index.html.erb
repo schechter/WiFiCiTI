@@ -1,13 +1,13 @@
-	<h3>Here's the ratings index patrial</h1>
+
 <% object.ratings.each do |rating| %>
 <ul>
-
-	<li> <%= rating.speed %></li>
-	<li> <%= rating.reliability %></li>
-	<li> <%= rating.accessibility %></li>
-	<li> <%= rating.power %></li>
-	<li> <%= rating.noise_level %></li>
+	<li>Speed: <%= rating.speed %></li>
+	<li>Reliability <%= rating.reliability %></li>
+	<li>Accessibility <%= rating.accessibility %></li>
+	<li>Power <%= rating.power %></li>
+	<li>Noise Level <%= rating.noise_level %></li>
+	<b>Overall Rating: <%= ((rating.speed + rating.reliability + rating.accessibility + rating.power + rating.noise_level) / 5).to_f %></b>
 	<br>
-	<li> <%= rating.comments %></li>
-	<% end %>
+	<li>Comments: <%= rating.comments %></li>
 </ul>
+	<% end %>

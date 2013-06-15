@@ -1,15 +1,17 @@
 <div class='row'>
 	<div class='small-12 columns'>
 		<h1><%= @user.name %></h1>
-		<p>This user's email:<%= @user.email %></p>
-		<p>This user's location:<%= @user.location %></p>
-		<p>This user's latitude:<%= @user.latitude %></p>
-		<p>This user's longitude:<%= @user.longitude %></p>
-
+		<p>Your email:<%= @user.email %></p>
 		<%= button_to 'Edit your account', edit_user_path(@user), method: 'get' %>
 		<%= button_to 'Delete your account', user_path(@user), method: 'delete' %>
 	</div>
-	<h5>Your Previous Ratings</h5>
-	<%= render partial: '/ratings/index', locals: {object: @user} %>
+	<% if @ratings.nil? %>
+		<p>You Have Not rated any hotspots yet</p>
+	<% else %>
+		<h5>Your Previous Ratings</h5>
+		<%= render partial: '/ratings/index', locals: {object: @user} %>
+	<% end %>
+	<h5>Edit your profile:</h5>
+	<%= render 'users/partials/form' %>
 
 </div>

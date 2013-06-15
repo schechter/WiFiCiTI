@@ -6,19 +6,12 @@
 		Add hotspot info &amp; map here</p>
 		<h3>Ratings</h3>
 		<% if @ratings.nil? %>
-		<p>There are no ratings but your code is working</p>
+			<p>There are no ratings but your code is working</p>
 		<% else %>
-		<% @ratings.each do |r| %>
-		Speed: <%= r.speed %><br />
-		Reliability: <%= r.reliability %><br />
-		Accessability: <%= r.accessibility %><br />
-		Power Avail: <%= r.power %><br />
-		Noise Level: <%= r.noise_level %><br />
-		<b>Overall Rating: <%= ((r.speed + r.reliability + r.accessibility + r.power + r.noise_level) / 5).to_f %></b>
-		<% end %>
+			<%= render partial: '/ratings/index', locals: {object: @hotspot} %>
 		<% end %>
 	</div>
 	<h3><%= @hotspot.name %>'s Ratings</h3>
-	<%= render partial: '/ratings/index', locals: {object: @hotspot} %>
+
 	<%= render partial: '/ratings/new', locals: {object: @hotspot} %>
 </div>
