@@ -30,6 +30,18 @@ class Hotspot < ActiveRecord::Base
   validates :latitude, numericality: true, allow_blank: false
   validates :longitude, numericality: true, allow_blank: false
 
+  def self.find_by_address(user_location)
+    Hotspot.near(user_location, 0.3)
+  end
+
+  def self.find_by_ip_address
+    #user_location = Geocoder.search(request.remote_ip)
+    user_location = Geocoder.search('208.185.23.206').first.data
+    lat = user_location['latitude'].to_s
+    long = user_location['longitude'].to_s
+    Hotspot.near([lat,long],0.3)
+  end
+
   def self.url_gen(hotspots)
     google_map = "http://maps.googleapis.com/maps/api/staticmap?size=680x480&markers=icon:http://goo.gl/3KRsr"
     hotspots.each do |hotspot|

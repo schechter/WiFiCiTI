@@ -11,19 +11,9 @@ class UsersController < ApplicationController
 
   def find_me
     if params[:location]
-      @hotspots = Hotspot.near(params[:location], 0.3)
-      puts '+++++++++++++++++++++++++++'
-      puts '+++++++++++++++++++++++++++'
-      puts @hotspots
+      @hotspots = Hotspot.find_by_address(params[:location])
     else
-      user_location = Geocoder.search('208.185.23.206')
-      location = user_location.first.data
-      lat = location['latitude'].to_s
-      long = location['longitude'].to_s
-      puts '+++++++++++++++++++++++++++' 
-      @hotspots = Hotspot.near([lat,long],0.3)
-      puts '+++++++++++++++++++++++++++'
-      puts @hotspots
+      @hotspots = Hotspot.find_by_ip_address
     end
     @google_map_url = Hotspot.url_gen(@hotspots)
   end
@@ -35,8 +25,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      redirect_to new_session_path(email: user.email, password: user.password)
+      redirect_to new_session_path
     else
+      flash[:fail] = 'There was an error creating your account.  Please try again'
       render :new
     end
   end
@@ -48,16 +39,17 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
-      flash[:success] = "Account has been sucessfully updated"
+      flash[:success] = 'Account has been sucessfully updated'
       redirect_to root_path
     else
+      flash[:fail] = 'There was an error updating your account.'
       render :edit
     end
   end
 
   def destroy
     User.find(params[:id]).delete
-    flash[:success] = "Account has been sucessfully removed"
+    flash[:success] = 'Account has been sucessfully removed'
     redirect_to root_path
   end
 end
