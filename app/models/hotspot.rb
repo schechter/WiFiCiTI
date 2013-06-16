@@ -37,7 +37,7 @@ class Hotspot < ActiveRecord::Base
 
   def self.find_by_ip_address
     #user_location = Geocoder.search(request.remote_ip)
-    user_location = Geocoder.search('208.185.23.206').first.data
+    user_location = Geocoder.search('208.185.23.206', :timeout => 7).first.data
     lat = user_location['latitude'].to_s
     long = user_location['longitude'].to_s
     Hotspot.near([lat,long],0.3, order: 'distance').all[0...20]
