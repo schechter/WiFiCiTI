@@ -54,8 +54,12 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    User.find(params[:id]).delete
-    flash[:success] = 'Account has been sucessfully removed'
-    redirect_to root_path
+    if User.find(params[:id]).delete
+      flash[:success] = 'Account has been sucessfully removed'
+      redirect_to :back
+    else
+      flash[:fail] = 'Account deletion failed'
+      redirect_to :back
+    end
   end
 end
