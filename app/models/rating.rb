@@ -28,5 +28,4 @@ class Rating < ActiveRecord::Base
   validates :reliability, numericality: true, allow_blank: false
   validates :speed, numericality: true, allow_blank: false
 
-
 end
