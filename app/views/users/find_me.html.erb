@@ -28,7 +28,7 @@
   <div class='small-4 columns'>
     <ul>
       <% unless current_user %>
-      <li><h6>Log in to see individual wifi locations</h6></li>
+      <li><h6><%= link_to 'Log in here', new_session_path %> to see individual wifi locations</h6></li>
       <% end %>
       <% @hotspots.each do |hotspot| %>
       <% if current_user %>

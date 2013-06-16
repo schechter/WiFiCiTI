@@ -51,7 +51,6 @@ class Rating < ActiveRecord::Base
     hotspots_hash = {}
     hotspots.each do |hotspot|
       avg_rating = calculate_avg_rating(hotspot.id)
-      p avg_rating
       hotspots_hash[hotspot.id] = avg_rating
     end
     hotspots_hash
