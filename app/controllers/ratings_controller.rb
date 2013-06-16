@@ -25,6 +25,6 @@ class RatingsController < ApplicationController
 		@rating = Rating.find(params[:id]) #should be ratings for one hotspot, not rating id.
 	end
 
-def average_ratings([hotspots])
+#def average_ratings([hotspots])
 	#come back to this later  use avg method for arrays in ApplicationController
-end
+#end
