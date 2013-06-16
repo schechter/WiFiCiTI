@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_filter :admin_auth, only: [:index, :destroy]
   
-  def index  #just for admin
+  def index  
     @users = User.all
   end
 
@@ -14,13 +14,12 @@ class UsersController < ApplicationController
     if params[:location]
       @address = params[:location]
       @hotspots = Hotspot.find_by_address(params[:location])
-      @avg_rating = Rating.average_ratings(@hotspots)
     else
       #@address = Geocoder.search([Geocoder.search(request.remote_ip, :timeout => 7).first.data['latitude'].to_s,Geocoder.search(request.remote_ip, :timeout => 5).first.data['longitude'].to_s],:timeout => 7).first.data['formatted_address']
       @address = Geocoder.search([Geocoder.search('208.185.23.206', :timeout => 7).first.data['latitude'].to_s,Geocoder.search('208.185.23.206', :timeout => 5).first.data['longitude'].to_s],:timeout => 7).first.data['formatted_address']
       @hotspots = Hotspot.find_by_ip_address
-      @avg_rating = Rating.average_ratings(@hotspots)
     end
+    @avg_rating = Rating.average_ratings(@hotspots)
     @google_map_url = Hotspot.url_gen(@hotspots)
   end
 

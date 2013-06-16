@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: users
+# Table xname: users
 #
 #  id              :integer          not null, primary key
 #  name            :string(255)
@@ -21,8 +21,6 @@ class User < ActiveRecord::Base
   validates :name, presence: true, length: {in: 4..20}
   validates :email, presence: true, length: {in: 6..30}, :uniqueness => true
   validates :password, presence: true, length: {in: 6..15}
-
-
 
   has_many :ratings
   has_many :hotspots, through: :ratings

@@ -23,7 +23,6 @@ class Hotspot < ActiveRecord::Base
   has_many :ratings
   has_many :users, through: :ratings
 
-  #geocoded_by :location
   after_validation :geocode
 
   validates_presence_of :fee, :latitude, :longitude, :name
