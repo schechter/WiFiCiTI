@@ -1,6 +1,7 @@
 
 <% object.ratings.each do |rating| %>
 <ul>
+	<li>Wifi Location:<%= Hotspot.find(rating.hotspot_id).name %></li>
 	<li>Speed: <%= rating.speed %></li>
 	<li>Reliability <%= rating.reliability %></li>
 	<li>Accessibility <%= rating.accessibility %></li>
