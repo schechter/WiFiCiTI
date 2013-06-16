@@ -21,8 +21,10 @@
         <li><%= link_to 'View Users', users_path %></li>
         <li class="divider"></li>
       <% else %>
-        <li><%= link_to 'My Account', current_user %></li>
-        <li class="divider"></li>
+        <% if current_user %>
+          <li><%= link_to 'My Account', current_user %></li>
+          <li class="divider"></li>
+        <% end %>
       <% end %>
     </ul>
 
