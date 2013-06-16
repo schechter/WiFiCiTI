@@ -10,21 +10,18 @@ class RatingsController < ApplicationController
 	end
 
 	def create
-		p params
-		p params[:rating]
 		@rating = Rating.new(params[:rating])
 		@hotspot = Hotspot.find(params[:rating][:hotspot_id])
 		if @rating.save
-			redirect_to(@hotspot)     #redirect_to hotspot_path, success: "You have successfully checked-in and rated #{@hotspot.name}"
+			flash[:success] = "You have successfully checked-in and rated #{@hotspot.name}"
+			redirect_to @hotspot
 		else
-			render 'new'
+			flash[:fail] = "There was an error rating #{@hotspot.name}"
+			redirect_to @hotspot
 		end
 	end
 
 	def show
 		@rating = Rating.find(params[:id]) #should be ratings for one hotspot, not rating id.
 	end
-
-def average_ratings([hotspots])
-	#come back to this later  use avg method for arrays in ApplicationController
 end
