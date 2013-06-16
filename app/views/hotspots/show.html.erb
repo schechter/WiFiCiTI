@@ -4,7 +4,7 @@
 		<% if @avg_rating == 0 %>
       <p>This hotspot has not yet been rated</p>
     <% else %>
-			<h3>Average Rating is <%= @avg_rating %> out of 5</h3>
+			<h3>Average Rating is <%= @avg_rating.round(2) %> out of 5</h3>
 		<% end %>
 		<h5><%= @hotspot.street %>, <%= @hotspot.city %>, <%= @hotspot.zip %>: <%= @hotspot.phone %></h1>
 		<img src='<%= @google_map_url %>'>

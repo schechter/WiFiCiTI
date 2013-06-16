@@ -1,13 +1,13 @@
 <% object.ratings.each do |rating| %>
 	<ul>
 		<li>Wifi Location:<%= Hotspot.find(rating.hotspot_id).name %></li>
+		<% avg_rating = ((rating.speed.to_f + rating.reliability.to_f + rating.accessibility.to_f + rating.power.to_f + rating.noise_level.to_f) / 5.0).round(2) %>
+		<b>Overall Rating: <%= avg_rating %></b>
 		<li>Speed: <%= rating.speed %></li>
 		<li>Reliability <%= rating.reliability %></li>
 		<li>Accessibility <%= rating.accessibility %></li>
 		<li>Power <%= rating.power %></li>
 		<li>Noise Level <%= rating.noise_level %></li>
-		<% avg_rating = ((rating.speed + rating.reliability + rating.accessibility + rating.power + rating.noise_level) / 5).to_f %>
-		<b>Overall Rating: <%= avg_rating %></b>
 		<br>
 		<li>Comments: <%= rating.comments %></li>
 	</ul>

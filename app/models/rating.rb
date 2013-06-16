@@ -34,13 +34,13 @@ class Rating < ActiveRecord::Base
     ratings = hs.ratings
     unless ratings == []
       counter = 0
-      total_avg_rating = 0
+      total_avg_rating = 0.0
       ratings.each do |rating|
-        avg_rating = ((rating.speed + rating.reliability + rating.accessibility + rating.power + rating.noise_level) / 5).to_f
+        avg_rating = ((rating.speed.to_f + rating.reliability.to_f + rating.accessibility.to_f + rating.power.to_f + rating.noise_level.to_f) / 5.0)
         counter += 1
         total_avg_rating += avg_rating
       end
-      total_avg_rating = total_avg_rating / counter
+      total_avg_rating = (total_avg_rating / counter).round(2)
     else
       total_avg_rating = 0
     end
@@ -51,6 +51,7 @@ class Rating < ActiveRecord::Base
     hotspots_hash = {}
     hotspots.each do |hotspot|
       avg_rating = calculate_avg_rating(hotspot.id)
+      p avg_rating
       hotspots_hash[hotspot.id] = avg_rating
     end
     hotspots_hash

@@ -41,9 +41,10 @@
         <% if @avg_rating[hotspot.id] == 0 %>
           <p>This hotspot has not yet been rated</p>
         <% else %>
-          <%= @avg_rating[hotspot.id] %>/5 avg rating<br />
+          avg rating <strong><%= @avg_rating[hotspot.id].round(2) %></strong> out of 5 <br />
+           based on <%= "#{pluralize(hotspot.ratings.count, 'rating')}" %>
         <% end %>
-        based on <%= "#{pluralize(hotspot.ratings.count, 'rating')}" %>
+       
       </li>
       <% end %>
     </ul>
