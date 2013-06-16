@@ -28,9 +28,32 @@ class Rating < ActiveRecord::Base
   validates :reliability, numericality: true, allow_blank: false
   validates :speed, numericality: true, allow_blank: false
 
-end
+
+  def self.calculate_avg_rating(id)
+    hs = Hotspot.find(id)
+    ratings = hs.ratings
+    unless ratings == []
+      counter = 0
+      total_avg_rating = 0
+      ratings.each do |rating|
+        avg_rating = ((rating.speed + rating.reliability + rating.accessibility + rating.power + rating.noise_level) / 5).to_f
+        counter += 1
+        total_avg_rating += avg_rating
+      end
+      total_avg_rating = total_avg_rating / counter
+    else
+      total_avg_rating = 0
+    end
+  end
 
 
-def average_ratings(hotspots)
-  #come back to this later  use avg method for arrays in ApplicationController
+  def self.average_ratings(hotspots)
+    hotspots_hash = {}
+    hotspots.each do |hotspot|
+      avg_rating = calculate_avg_rating(hotspot.id)
+      hotspots_hash[hotspot.id] = avg_rating
+    end
+    hotspots_hash
+  end
+
 end

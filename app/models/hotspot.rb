@@ -51,5 +51,4 @@ class Hotspot < ActiveRecord::Base
     end
     google_map += "&maptype=terrain&sensor=false"
   end
-
 end

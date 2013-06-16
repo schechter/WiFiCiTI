@@ -38,7 +38,12 @@
         <% end%>
         <%= "#{hotspot.street}, #{hotspot.city}" %><br />
         <%= hotspot.phone %><br />
-        <%= "#{pluralize(hotspot.ratings.count, 'rating')}" %>
+        <% if @avg_rating[hotspot.id] == 0 %>
+          <p>This hotspot has not yet been rated</p>
+        <% else %>
+          <%= @avg_rating[hotspot.id] %>/5 avg rating<br />
+        <% end %>
+        based on <%= "#{pluralize(hotspot.ratings.count, 'rating')}" %>
       </li>
       <% end %>
     </ul>

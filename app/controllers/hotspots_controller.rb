@@ -10,6 +10,7 @@ class HotspotsController < ApplicationController
     @ratings = @hotspot.ratings
     @rating = Rating.new
     @google_map_url = Hotspot.url_gen([@hotspot])
+    @avg_rating = Rating.calculate_avg_rating(@hotspot.id)
   end
 
   def new

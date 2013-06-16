@@ -1,7 +1,11 @@
 <div class='row'>
 	<div class='small-12 columns'>
-		<h1>You're checked in at: <%= @hotspot.name %></h1>
-		<h4><%= @hotspot.name %></h1>
+		<h2><%= @hotspot.name %></h2>
+		<% if @avg_rating == 0 %>
+      <p>This hotspot has not yet been rated</p>
+    <% else %>
+			<h3>Average Rating is <%= @avg_rating %> out of 5</h3>
+		<% end %>
 		<h5><%= @hotspot.street %>, <%= @hotspot.city %>, <%= @hotspot.zip %>: <%= @hotspot.phone %></h1>
 		<img src='<%= @google_map_url %>'>
 		<% if @ratings.nil? %>
@@ -14,5 +18,3 @@
 
 	<%= render partial: '/ratings/new', locals: {object: @hotspot} %>
 </div>
-
-
