@@ -9,6 +9,7 @@ gem 'font-awesome-sass-rails'
 gem 'geocoder'
 gem 'haml'
 gem 'bcrypt-ruby'
+gem 'newrelic_rpm'
 
 
 group :development do
