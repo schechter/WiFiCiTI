@@ -12,8 +12,10 @@ class UsersController < ApplicationController
 
   def find_me
     if params[:location]
+      @address = params[:location]
       @hotspots = Hotspot.find_by_address(params[:location])
     else
+      @address = Geocoder.search([Geocoder.search('208.185.23.206').first.data['latitude'].to_s,Geocoder.search('208.185.23.206').first.data['longitude'].to_s]).first.data['formatted_address']
       @hotspots = Hotspot.find_by_ip_address
     end
     @google_map_url = Hotspot.url_gen(@hotspots)
