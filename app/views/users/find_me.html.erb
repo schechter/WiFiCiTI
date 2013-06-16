@@ -27,11 +27,18 @@
 
   <div class='small-4 columns'>
     <ul>
+      <% unless current_user %>
+      <li><h6>Log in to see individual wifi locations</h6></li>
+      <% end %>
       <% @hotspots.each do |hotspot| %>
+      <% if current_user %>
       <li><%= link_to hotspot.name, hotspot %><br />
+        <% else %>
+        <li> <%= hotspot.name %> </li>
+        <% end%>
         <%= "#{hotspot.street}, #{hotspot.city}" %><br />
         <%= hotspot.phone %><br />
-        <%= link_to "#{pluralize(hotspot.ratings.count, 'rating')}",hotspot %>
+        <%= "#{pluralize(hotspot.ratings.count, 'rating')}" %>
       </li>
       <% end %>
     </ul>
