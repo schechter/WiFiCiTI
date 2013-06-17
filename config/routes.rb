@@ -8,9 +8,9 @@ HotspotApp::Application.routes.draw do
     end
   end
 
-   get '/hotspots' => 'hotspots#index'
-   get '/hotspots/:id' => 'hotspots#show', as: 'hotspot'
-  #resources :hotspots
+   #get '/hotspots' => 'hotspots#index'
+   #get '/hotspots/:id' => 'hotspots#show', as: 'hotspot'
+  resources :hotspots
 
  get '/ratings' => 'ratings#index'
  get '/ratings/new' => 'ratings#new'
