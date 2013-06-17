@@ -56,4 +56,11 @@ class Rating < ActiveRecord::Base
     hotspots_hash
   end
 
+
+class Array  #new method for array, average to 2 decimals ##DELETE ME IF NOT USED
+  def avg 
+    blank? and 0.0 or (sum.to_f/size).round(2)
+  end
+end
+
 end

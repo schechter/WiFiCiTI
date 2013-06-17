@@ -20,11 +20,6 @@ class SessionsController < ApplicationController
     end
   end
 
-  # def update
-  #   session[:location] = params([:location])
-  #   redirect_to current_user
-  # end
-
   def destroy
     session[:user_id] = nil
     redirect_to login_path

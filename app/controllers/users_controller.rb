@@ -15,8 +15,10 @@ class UsersController < ApplicationController
       @address = params[:location]
       @hotspots = Hotspot.find_by_address(params[:location])
     else
-      #@address = Geocoder.search([Geocoder.search(request.remote_ip, :timeout => 7).first.data['latitude'].to_s,Geocoder.search(request.remote_ip, :timeout => 5).first.data['longitude'].to_s],:timeout => 7).first.data['formatted_address']
-      @address = Geocoder.search([Geocoder.search('208.185.23.206', :timeout => 7).first.data['latitude'].to_s,Geocoder.search('208.185.23.206', :timeout => 5).first.data['longitude'].to_s],:timeout => 7).first.data['formatted_address']
+      location = Geocoder.search('208.185.23.206', :timeout => 7).first.data
+      lat = location['latitude'].to_s
+      long = location['longitude'].to_s
+      @address = Geocoder.search([lat,long],:timeout => 7).first.data['formatted_address']
       @hotspots = Hotspot.find_by_ip_address
     end
     @avg_rating = Rating.average_ratings(@hotspots)
