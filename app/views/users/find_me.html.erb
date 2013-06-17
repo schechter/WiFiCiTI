@@ -15,7 +15,7 @@
     <% end %>
     <% unless current_user %>
       <hr />
-      <h6 class='text-center'><%= link_to 'Log in', new_session_path %> or <%= link_to 'Register', new_user_path %> to see individual wifi locations</h6>
+      <h6 class='text-center'><%= link_to 'Log in', login_path %> or <%= link_to 'Register', new_user_path %> to see individual wifi locations</h6>
     <% end %>
 
   </div>
