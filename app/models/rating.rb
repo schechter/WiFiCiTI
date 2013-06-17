@@ -32,12 +32,14 @@ class Rating < ActiveRecord::Base
     hs = Hotspot.find(id)
     ratings = hs.ratings
     unless ratings == []
-      total_avg_rating = []
+      counter = 0
+      total_avg_rating = 0.0
       ratings.each do |rating|
-        average_rating = [rating.speed, rating.reliability, rating.accessibility, rating.power, rating.noise_level].avg
-        total_avg_rating << average_rating
+        avg_rating = ((rating.speed + rating.reliability + rating.accessibility + rating.power + rating.noise_level).to_f / 5.0)
+        counter += 1
+        total_avg_rating += avg_rating
       end
-      total_avg_rating.avg
+      total_avg_rating = (total_avg_rating / counter).round(2)
     else
       total_avg_rating = 0
     end
@@ -49,11 +51,5 @@ class Rating < ActiveRecord::Base
       hotspots_hash[hotspot.id] = calculate_avg_rating(hotspot.id)
     end
     hotspots_hash
-  end
-
-  class Array  #new method for array, average to 2 decimals ##DELETE ME IF NOT USED
-    def avg
-      blank? and 0.0 or (sum.to_f/size).round(2)
-    end
   end
 end
