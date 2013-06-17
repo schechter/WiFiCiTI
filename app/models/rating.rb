@@ -28,19 +28,16 @@ class Rating < ActiveRecord::Base
   validates :reliability, numericality: true, allow_blank: false
   validates :speed, numericality: true, allow_blank: false
 
-
-  def self.calculate_avg_rating(id)
+def self.calculate_avg_rating(id)
     hs = Hotspot.find(id)
     ratings = hs.ratings
     unless ratings == []
-      counter = 0
-      total_avg_rating = 0.0
+      total_avg_rating = []
       ratings.each do |rating|
-        avg_rating = ((rating.speed.to_f + rating.reliability.to_f + rating.accessibility.to_f + rating.power.to_f + rating.noise_level.to_f) / 5.0)
-        counter += 1
-        total_avg_rating += avg_rating
+        average_rating = [rating.speed, rating.reliability, rating.accessibility, rating.power, rating.noise_level].avg
+        total_avg_rating << average_rating
       end
-      total_avg_rating = (total_avg_rating / counter).round(2)
+      total_avg_rating.avg
     else
       total_avg_rating = 0
     end
