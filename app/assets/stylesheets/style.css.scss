@@ -10,6 +10,17 @@ body{
 
 h1, h2, h3, h4, h5 { font-family: 'Dosis', sans-serif; }
 
+a {
+  color: #7552B2;
+  color:#333;
+  text-decoration:underline;
+}
+
+a:hover{
+  color: #ccc;
+  text-decoraton:none;
+}
+
 .row-divider{ height:25px;}
 
 .box {
