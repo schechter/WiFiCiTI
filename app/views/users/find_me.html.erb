@@ -28,7 +28,7 @@
   <div class='small-6 large-4 columns'>
     <div class='box hotspots'>
       <p>
-        <strong><%= link_to "#{hotspot.name}", hotspot if current_user %></strong>
+        <strong><%= link_to hotspot.name, hotspot if current_user %></strong>
         <strong><%= "#{hotspot.name}" unless current_user %></strong>
         <br /><%= "#{hotspot.street}, #{hotspot.city}" %>
       </p>

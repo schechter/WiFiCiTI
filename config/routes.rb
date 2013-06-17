@@ -9,9 +9,9 @@ HotspotApp::Application.routes.draw do
     end
   end
 
-get '/hotspots' => 'hotspots#index'
-get '/hotspots/:id' => 'hotspots#show'
-
+  match '/hotspots' => 'hotspots#index'
+  match '/hotspots/:id' => 'hotspots#show'
+#resources :hotspots
 
  get '/ratings' => 'ratings#index'
  get '/ratings/new' => 'ratings#new'
