@@ -14,7 +14,6 @@
 				<%= link_to 'website', hotspot.url  unless hotspot.url == " " %>
 				<br />
 				<%= link_to "#{pluralize(hotspot.ratings.count, 'rating')}",hotspot %>  |  
-				<%= link_to 'rate this hotspot', new_rating_path(id: hotspot.id) %>
 			</div>
 		</div>
 	<% end %>
