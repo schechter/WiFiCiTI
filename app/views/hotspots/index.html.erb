@@ -1,4 +1,4 @@
-<div class='row'>
+<div class='row box'>
 	<div class='small-12 columns'>
 	<h2>NYC WiFi HOTSPOTS</h2>
 	<h3><%= @hotspots.count %> available hotspots</h3>
@@ -6,7 +6,7 @@
 		<div class='small-12 columns'>
 			<div class='hotspot-teaser'>
 				<strong><%= hotspot.id %><br />
-					<%= hotspot.name %></strong>  <small><%= link_to 'delete hotspot', hotspot, method: :delete %></small><br />
+					<%= hotspot.name %></strong><br />
 				<%= hotspot.street %>, <%= hotspot.city %> <%= hotspot.zip %><br />
 				<br />
 				<strong><%= hotspot.fee %> wifi</strong><br />
