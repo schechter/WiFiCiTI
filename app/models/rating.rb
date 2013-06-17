@@ -28,7 +28,7 @@ class Rating < ActiveRecord::Base
   validates :reliability, numericality: true, allow_blank: false
   validates :speed, numericality: true, allow_blank: false
 
-def self.calculate_avg_rating(id)
+  def self.calculate_avg_rating(id)
     hs = Hotspot.find(id)
     ratings = hs.ratings
     unless ratings == []
@@ -43,21 +43,17 @@ def self.calculate_avg_rating(id)
     end
   end
 
-
   def self.average_ratings(hotspots)
     hotspots_hash = {}
     hotspots.each do |hotspot|
-      avg_rating = calculate_avg_rating(hotspot.id)
-      hotspots_hash[hotspot.id] = avg_rating
+      hotspots_hash[hotspot.id] = calculate_avg_rating(hotspot.id)
     end
     hotspots_hash
   end
 
-
-class Array  #new method for array, average to 2 decimals ##DELETE ME IF NOT USED
-  def avg 
-    blank? and 0.0 or (sum.to_f/size).round(2)
+  class Array  #new method for array, average to 2 decimals ##DELETE ME IF NOT USED
+    def avg
+      blank? and 0.0 or (sum.to_f/size).round(2)
+    end
   end
-end
-
 end
