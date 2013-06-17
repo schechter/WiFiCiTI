@@ -1,15 +1,17 @@
-- if current_user
-  = "Already logged in as #{current_user.email}"
-  %br
-  = link_to 'logout', logout_path, method: :destroy
-- else
-  
-  %h2 Login
-  = form_tag sessions_path do
-    = label_tag :email
-    = text_field_tag :email
-    %br
-    = label_tag :password
-    = password_field_tag :password
-    %br
-    = submit_tag
+%div.row.box
+  %div.small-12.columns
+    - if current_user
+      = "Already logged in as #{current_user.email}"
+      %br
+      = link_to 'logout', logout_path, method: :destroy
+    - else
+      
+      %h2 Login
+      = form_tag sessions_path do
+        = label_tag :email
+        = text_field_tag :email
+        %br
+        = label_tag :password
+        = password_field_tag :password
+        %br
+        = submit_tag

@@ -1,14 +1,27 @@
-<% object.ratings.each do |rating| %>
-	<ul>
-		<li>Wifi Location:<%= Hotspot.find(rating.hotspot_id).name %></li>
-		<% avg_rating = ((rating.speed.to_f + rating.reliability.to_f + rating.accessibility.to_f + rating.power.to_f + rating.noise_level.to_f) / 5.0).round(2) %>
-		<b>Overall Rating: <%= avg_rating %></b>
-		<li>Speed: <%= rating.speed %></li>
-		<li>Reliability <%= rating.reliability %></li>
-		<li>Accessibility <%= rating.accessibility %></li>
-		<li>Power <%= rating.power %></li>
-		<li>Noise Level <%= rating.noise_level %></li>
-		<br>
-		<li>Comments: <%= rating.comments %></li>
-	</ul>
-<% end %>
+<table width="100%">
+  <thead>
+    <tr class='text-center'>
+      <th>Overall Rating</th>
+      <th>Speed</th>
+      <th>Reliability</th>
+      <th>Accessibility</th>
+      <th class='text-center'>Access to Outlets</th>
+      <th>Noise</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+		<% object.ratings.each do |rating| %>
+			<% avg_rating = ((rating.speed.to_f + rating.reliability.to_f + rating.accessibility.to_f + rating.power.to_f + rating.noise_level.to_f) / 5.0).round(2) %>
+			<tr class='text-center'>
+				<td width="50px"><b><%= avg_rating %></b></td>
+				<td width="50px"><%= rating.speed %></td>
+				<td width="50px"><%= rating.reliability %></td>
+				<td width="50px"><%= rating.accessibility %></td>
+				<td width="50px"><%= rating.power %></td>
+				<td width="50px"><%= rating.noise_level %></td>
+				<td class='text-left'><%= rating.comments %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

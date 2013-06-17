@@ -1,23 +1,5 @@
-<div class='row'>
-  <div class='small-12 columns'>
-    <p>For more accurate hotspot suggestions, please enter your current address below and press <strong>Find Me</strong></p>
-    <h6>We have you at <%= @address %></h6>
-  </div>
-
-  <div class='small-10 columns'>
-    <div class='row collapse'>
-      <%= form_tag find_me_users_path do %>
-      <div class='small-10 columns'>
-        <%= text_field_tag :location, nil, placeholder: 'Enter your location here' %>
-      </div>
-      <div class='small-2 columns'>
-        <%= submit_tag 'find me', class: 'button postfix' %>
-      </div>
-      <% end %>
-    </div>
-  </div>
-
-  <div class='small-8 columns'>
+<div class='row box'>
+  <div class='small-8 columns static-map-canvas'>
     <% if @hotspots.empty? %>
       <p>Unfortunately we could not find any hotspots near the address you entered.  Please enter a new address</p>
     <% else %>
@@ -25,29 +7,38 @@
     <% end %>
   </div>
 
-  <div class='small-4 columns'>
-    <ul>
-      <% unless current_user %>
-      <li><h6><%= link_to 'Log in here', new_session_path %> to see individual wifi locations</h6></li>
-      <% end %>
-      <% @hotspots.each do |hotspot| %>
-      <% if current_user %>
-      <li><%= link_to hotspot.name, hotspot %><br />
-        <% else %>
-        <li> <%= hotspot.name %> </li>
-        <% end%>
-        <%= "#{hotspot.street}, #{hotspot.city}" %><br />
-        <%= hotspot.phone %><br />
-        <% if @avg_rating[hotspot.id] == 0 %>
-          <p>This hotspot has not yet been rated</p>
-        <% else %>
-          avg rating <strong><%= @avg_rating[hotspot.id].round(2) %></strong> out of 5 <br />
-           based on <%= "#{pluralize(hotspot.ratings.count, 'rating')}" %>
-        <% end %>
-       
-      </li>
-      <% end %>
-    </ul>
-  </div>
 
+  <div class='small-4 columns find-me-form'>
+  <h6>You are currently located at<br /><%= @address %></h6>
+    <%= form_tag find_me_users_path do %>
+      <%= text_field_tag :location, nil, placeholder: 'enter a new address here' %>
+      <%= submit_tag 'find me', class: 'button postfix' %>
+    <% end %>
+    <% unless current_user %>
+      <hr />
+      <h6 class='text-center'><%= link_to 'Log in', new_session_path %> or <%= link_to 'Register', new_user_path %> to see individual wifi locations</h6>
+    <% end %>
+  </div>
+</div>
+
+<div class='row-divider'></div>
+
+<div class='row'>
+  <% @hotspots.each do |hotspot| %>
+  <div class='small-6 large-4 columns'>
+    <div class='box hotspots'>
+      <p>
+        <strong><%= link_to "#{hotspot.name}", hotspot if current_user %></strong>
+        <strong><%= "#{hotspot.name}" unless current_user %></strong>
+        <br /><%= "#{hotspot.street}, #{hotspot.city}" %>
+      </p>
+      <% if @avg_rating[hotspot.id] == 0 %>
+        <p>This hotspot has not yet been rated</p>
+      <% else %>
+        avg rating <strong><%= @avg_rating[hotspot.id].round(2) %></strong> out of 5 <br />
+        based on <%= "#{pluralize(hotspot.ratings.count, 'rating')}" %>
+      <% end %>
+    </div>
+  </div>   
+  <% end %>
 </div>

@@ -44,7 +44,7 @@ class Hotspot < ActiveRecord::Base
   end
 
   def self.url_gen(hotspots)
-    google_map = "http://maps.googleapis.com/maps/api/staticmap?size=680x480&markers=icon:http://goo.gl/3KRsr"
+    google_map = "http://maps.googleapis.com/maps/api/staticmap?size=450x350&markers=icon:http://goo.gl/3KRsr"
     hotspots.each do |hotspot|
       markers = "|#{hotspot['latitude'].to_f},#{ hotspot['longitude'].to_f}"
       google_map += markers

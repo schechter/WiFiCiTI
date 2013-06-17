@@ -1,20 +1,26 @@
 <div class='row'>
 	<div class='small-12 columns'>
-		<h2><%= @hotspot.name %></h2>
-		<% if @avg_rating == 0 %>
-      <p>This hotspot has not yet been rated</p>
-    <% else %>
-			<h3>Average Rating is <%= @avg_rating.round(2) %> out of 5</h3>
-		<% end %>
-		<h5><%= @hotspot.street %>, <%= @hotspot.city %>, <%= @hotspot.zip %>: <%= @hotspot.phone %></h1>
-		<img src='<%= @google_map_url %>'>
-		<% if @ratings.nil? %>
-			<p>There are no ratings but your code is working</p>
-		<% else %>
-			<%= render partial: '/ratings/index', locals: {object: @hotspot} %>
-		<% end %>
+		<h2 class=''><%= @hotspot.name %><br />
+			<small> <%= "#{@hotspot.street}, #{@hotspot.city}  #{@hotspot.zip}" %>
+				<%= "  |  #{@hotspot.phone}" %></small></h2>
 	</div>
-	<h3><%= @hotspot.name %>'s Ratings</h3>
-
-	<%= render partial: '/ratings/new', locals: {object: @hotspot} %>
+</div>
+	
+<div class='row box'>
+	<div class='small-8 columns'>
+		<% if @avg_rating == 0 %>
+      <h4>This hotspot has not yet been rated</h4>
+    <% else %>
+			<h4>Average Rating is <%= @avg_rating.round(2) %> out of 5</h4>
+		<% end %>
+		<img src='<%= @google_map_url %>'>
+	</div>
+	<div class='small-4 columns'>
+		<h4>Rate this hotspot</h4>
+		<%= render partial: '/ratings/new', locals: {object: @hotspot} %>
+	</div>
+	<% unless @ratings.empty? %>
+		<h3><%= @hotspot.name %>'s Ratings</h3>
+		<%= render partial: '/ratings/index', locals: {object: @hotspot} %>
+		<% end %>
 </div>
