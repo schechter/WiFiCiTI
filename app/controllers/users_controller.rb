@@ -16,8 +16,7 @@ class UsersController < ApplicationController
       @hotspots = Hotspot.find_by_address(params[:location])
     else
       location = Geocoder.search('208.185.23.206', :timeout => 7).first.data
-      lat = location['latitude'].to_s
-      long = location['longitude'].to_s
+      lat, long = [location['latitude'].to_s, location['longitude'].to_s]
       @address = Geocoder.search([lat,long],:timeout => 7).first.data['formatted_address']
       @hotspots = Hotspot.find_by_ip_address
     end
