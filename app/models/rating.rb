@@ -28,6 +28,12 @@ class Rating < ActiveRecord::Base
   validates :reliability, numericality: true, allow_blank: false
   validates :speed, numericality: true, allow_blank: false
 
+  class Array  #new method for array, average to 2 decimals ##DELETE ME IF NOT USED
+    def avg
+      blank? and 0.0 or (sum.to_f/size).round(2)
+    end
+  end
+
   def self.calculate_avg_rating(id)
     hs = Hotspot.find(id)
     ratings = hs.ratings
