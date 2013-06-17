@@ -5,12 +5,16 @@ class HotspotsController < ApplicationController
     @hotspots = Hotspot.order('name ASC')
   end
 
-  def show
-    @hotspot = Hotspot.find(params[:id])
-    @ratings = @hotspot.ratings
-    @rating = Rating.new
-    @google_map_url = Hotspot.url_gen([@hotspot])
-    @avg_rating = Rating.calculate_avg_rating(@hotspot.id)
+  def show  #before show make sure logged in
+    if current_user
+      @hotspot = Hotspot.find(params[:id])
+      @ratings = @hotspot.ratings
+      @rating = Rating.new
+      @google_map_url = Hotspot.url_gen([@hotspot])
+      @avg_rating = Rating.calculate_avg_rating(@hotspot.id)
+    else
+      render text:"GoTo Jail, Go Directly to Jail, You Do Not Pass Go, You Do Not Collect $200. YOU Do Not Get Redirected To A Usefull Place.  STOP TRYING TO BREAK THE SITE!!!"
+    end
   end
 
   def new
