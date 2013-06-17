@@ -1,7 +1,6 @@
 HotspotApp::Application.routes.draw do
 
   root to: 'static_pages#home'
-#  resources :hotspots
   resources :users do
     collection do
       get 'find_me'
@@ -9,9 +8,9 @@ HotspotApp::Application.routes.draw do
     end
   end
 
-  match '/hotspots' => 'hotspots#index'
-  match '/hotspots/:id' => 'hotspots#show'
-#resources :hotspots
+   #get '/hotspots' => 'hotspots#index'
+   #get '/hotspots/:id' => 'hotspots#show', as: 'hotspot'
+  resources :hotspots
 
  get '/ratings' => 'ratings#index'
  get '/ratings/new' => 'ratings#new'
